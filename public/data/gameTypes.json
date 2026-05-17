@@ -1,50 +1,68 @@
 [
   {
     "id": "poker",
-    "name": "Poker",
-    "rules": "No-limit Texas hold'em, house blinds, freezeout unless noted.",
-    "scoring": "Chip finish order converted to points."
+    "name": "Texas Hold'em Poker",
+    "rules": "No-limit Texas hold'em.",
+    "scoring": "Points by finish or chips won (house rules)."
   },
   {
     "id": "hearts",
     "name": "Hearts",
-    "rules": "Standard Hearts with moon shooting enabled.",
-    "scoring": "Highest score wins under house variant table."
+    "rules": "Standard Hearts.",
+    "scoring": "Based on house scoring variant."
   },
   {
-    "id": "blackjack",
-    "name": "Blackjack",
-    "rules": "Dealer rotates every shoe, standard hit/stand/double/split.",
-    "scoring": "Net chip profit per shoe."
+    "id": "sequence",
+    "name": "Sequence",
+    "rules": "Standard Sequence rules.",
+    "scoring": "By match/round wins."
   },
   {
     "id": "canadian-salad",
     "name": "Canadian Salad",
-    "rules": "Progressive trick-taking rounds with rotating constraints.",
-    "scoring": "Round points cumulative with bonus hand option."
+    "rules": "Progressive trick-taking rounds.",
+    "scoring": "Cumulative round points."
   },
   {
-    "id": "oh-heck",
-    "name": "Oh Heck",
-    "rules": "Bid exact tricks each round, no bid duplication by dealer.",
-    "scoring": "10 + bid for exact, trick count otherwise."
-  },
-  {
-    "id": "ping-pong",
-    "name": "Ping Pong",
-    "rules": "Best-of-three games to 11, win by 2.",
-    "scoring": "Bracket points by placement."
-  },
-  {
-    "id": "darts",
-    "name": "Darts",
-    "rules": "501 double-out format.",
-    "scoring": "First to finish gets full points, descending thereafter."
+    "id": "blackjack",
+    "name": "Blackjack",
+    "rules": "Standard blackjack with house rules.",
+    "scoring": "Net chips or wins by round."
   },
   {
     "id": "the-game",
     "name": "The Game",
-    "rules": "Running mind game; mention triggers penalty.",
-    "scoring": "Survival/time-based points per session."
+    "rules": "Co-op card game with ascending and descending stacks.",
+    "scoring": "Cards remaining or house variant."
+  },
+  {
+    "id": "settlers-of-catan",
+    "name": "Settlers of Catan",
+    "rules": "Standard Catan rules.",
+    "scoring": "First to 10 victory points."
+  },
+  {
+    "id": "ticket-to-ride",
+    "name": "Ticket to Ride",
+    "rules": "Standard Ticket to Ride rules.",
+    "scoring": "Route and destination ticket points."
+  },
+  {
+    "id": "oh-heck",
+    "name": "Oh Heck",
+    "rules": "Bid exact tricks each round.",
+    "scoring": "House scoring by bids/tricks."
+  },
+  {
+    "id": "ping-pong",
+    "name": "Ping Pong",
+    "rules": "Best-of games to 11, win by 2.",
+    "scoring": "By match wins."
+  },
+  {
+    "id": "darts",
+    "name": "Darts",
+    "rules": "Common format (e.g., 301/501), per house setup.",
+    "scoring": "By leg or match wins."
   }
 ]
