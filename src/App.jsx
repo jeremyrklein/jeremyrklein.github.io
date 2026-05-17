@@ -384,7 +384,7 @@ function App() {
                           {index + 1}. {entry.player.name}
                         </span>
                         <span className="muted small">
-                          {isUnlocked ? `${entry.stats.wins} wins` : 'Login required'}
+                          {isUnlocked ? `${entry.stats.wins} wins` : 'Shared password required'}
                         </span>
                       </div>
                       <div className="bar-track">
