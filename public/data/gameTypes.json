@@ -1,0 +1,50 @@
+[
+  {
+    "id": "poker",
+    "name": "Poker",
+    "rules": "No-limit Texas hold'em, house blinds, freezeout unless noted.",
+    "scoring": "Chip finish order converted to points."
+  },
+  {
+    "id": "hearts",
+    "name": "Hearts",
+    "rules": "Standard Hearts with moon shooting enabled.",
+    "scoring": "Highest score wins under house variant table."
+  },
+  {
+    "id": "blackjack",
+    "name": "Blackjack",
+    "rules": "Dealer rotates every shoe, standard hit/stand/double/split.",
+    "scoring": "Net chip profit per shoe."
+  },
+  {
+    "id": "canadian-salad",
+    "name": "Canadian Salad",
+    "rules": "Progressive trick-taking rounds with rotating constraints.",
+    "scoring": "Round points cumulative with bonus hand option."
+  },
+  {
+    "id": "oh-heck",
+    "name": "Oh Heck",
+    "rules": "Bid exact tricks each round, no bid duplication by dealer.",
+    "scoring": "10 + bid for exact, trick count otherwise."
+  },
+  {
+    "id": "ping-pong",
+    "name": "Ping Pong",
+    "rules": "Best-of-three games to 11, win by 2.",
+    "scoring": "Bracket points by placement."
+  },
+  {
+    "id": "darts",
+    "name": "Darts",
+    "rules": "501 double-out format.",
+    "scoring": "First to finish gets full points, descending thereafter."
+  },
+  {
+    "id": "the-game",
+    "name": "The Game",
+    "rules": "Running mind game; mention triggers penalty.",
+    "scoring": "Survival/time-based points per session."
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "p01",
+    "name": "Alex Rivera",
+    "nickname": "Ace",
+    "bio": "Card shark with a calm face and chaotic luck.",
+    "specialty": "Poker endgame reads",
+    "joinedYear": 2019,
+    "avatar": "/photos/players/alex.jpg",
+    "active": true
+  },
+  {
+    "id": "p02",
+    "name": "Brooke Lin",
+    "nickname": "Dealer B",
+    "bio": "Fast shuffler and fearless in blackjack doubles.",
+    "specialty": "Blackjack bankroll discipline",
+    "joinedYear": 2020,
+    "avatar": "/photos/players/brooke.jpg",
+    "active": true
+  },
+  {
+    "id": "p03",
+    "name": "Chris Nolan",
+    "nickname": "The Count",
+    "bio": "Quiet strategist who tracks every hand mentally.",
+    "specialty": "Hearts avoidance",
+    "joinedYear": 2018,
+    "avatar": "/photos/players/chris.jpg",
+    "active": true
+  },
+  {
+    "id": "p04",
+    "name": "Dana Patel",
+    "nickname": "Queen D",
+    "bio": "Aggressive opener, loves forcing action.",
+    "specialty": "Oh Heck predictions",
+    "joinedYear": 2021,
+    "avatar": "/photos/players/dana.jpg",
+    "active": true
+  },
+  {
+    "id": "p05",
+    "name": "Evan Cross",
+    "nickname": "Banker",
+    "bio": "Always keeps score, always asks for rematch.",
+    "specialty": "Canadian Salad consistency",
+    "joinedYear": 2019,
+    "avatar": "/photos/players/evan.jpg",
+    "active": true
+  },
+  {
+    "id": "p06",
+    "name": "Farah Khan",
+    "nickname": "Sniper",
+    "bio": "Darts specialist who learned cards for game night.",
+    "specialty": "Darts finishes",
+    "joinedYear": 2022,
+    "avatar": "/photos/players/farah.jpg",
+    "active": true
+  },
+  {
+    "id": "p07",
+    "name": "Gabe Ortiz",
+    "nickname": "Ghost",
+    "bio": "Hard to read and harder to beat after midnight.",
+    "specialty": "Late-night poker tables",
+    "joinedYear": 2018,
+    "avatar": "/photos/players/gabe.jpg",
+    "active": true
+  },
+  {
+    "id": "p08",
+    "name": "Hana Kim",
+    "nickname": "Doc",
+    "bio": "Explains rules clearly, then wins anyway.",
+    "specialty": "Teaching new games",
+    "joinedYear": 2023,
+    "avatar": "/photos/players/hana.jpg",
+    "active": true
+  },
+  {
+    "id": "p09",
+    "name": "Ian Murphy",
+    "nickname": "Murph",
+    "bio": "Ping pong menace with legendary trash talk.",
+    "specialty": "Ping pong serves",
+    "joinedYear": 2020,
+    "avatar": "/photos/players/ian.jpg",
+    "active": true
+  },
+  {
+    "id": "p10",
+    "name": "Jules Romero",
+    "nickname": "Wildcard",
+    "bio": "Can win any game once, then forget strategy.",
+    "specialty": "The Game mind games",
+    "joinedYear": 2021,
+    "avatar": "/photos/players/jules.jpg",
+    "active": true
+  },
+  {
+    "id": "p11",
+    "name": "Kira Singh",
+    "nickname": "K-Straight",
+    "bio": "Never tilts, always tracks percentages.",
+    "specialty": "Blackjack risk control",
+    "joinedYear": 2019,
+    "avatar": "/photos/players/kira.jpg",
+    "active": true
+  },
+  {
+    "id": "p12",
+    "name": "Leo Grant",
+    "nickname": "Lefty",
+    "bio": "Left-handed dart throw confuses everyone.",
+    "specialty": "Darts doubles",
+    "joinedYear": 2022,
+    "avatar": "/photos/players/leo.jpg",
+    "active": true
+  },
+  {
+    "id": "p13",
+    "name": "Maya Flores",
+    "nickname": "Captain",
+    "bio": "Host with color-coded score sheets.",
+    "specialty": "Session logistics",
+    "joinedYear": 2018,
+    "avatar": "/photos/players/maya.jpg",
+    "active": true
+  },
+  {
+    "id": "p14",
+    "name": "Noah Price",
+    "nickname": "N9",
+    "bio": "Loves long-shot plays and comeback arcs.",
+    "specialty": "Hearts recovery rounds",
+    "joinedYear": 2020,
+    "avatar": "/photos/players/noah.jpg",
+    "active": true
+  },
+  {
+    "id": "p15",
+    "name": "Olive Chen",
+    "nickname": "Clutch",
+    "bio": "Turns pressure moments into highlight clips.",
+    "specialty": "Final round focus",
+    "joinedYear": 2024,
+    "avatar": "/photos/players/olive.jpg",
+    "active": true
+  },
+  {
+    "id": "p16",
+    "name": "Priya Das",
+    "nickname": "P-Deck",
+    "bio": "Rulebook memory is basically perfect.",
+    "specialty": "Canadian Salad scoring",
+    "joinedYear": 2023,
+    "avatar": "/photos/players/priya.jpg",
+    "active": true
+  }
+]
