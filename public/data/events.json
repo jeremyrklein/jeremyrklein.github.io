@@ -194,5 +194,52 @@
         ]
       }
     ]
+  },
+  {
+    "id": "e2023-02",
+    "title": "Game Night - Feb 4, 2023",
+    "date": "2023-02-04",
+    "location": "TBD",
+    "host": "TBD",
+    "photo": "",
+    "recap": "# Game Night - Feb 4, 2023\n\nA night of Canadian Salad, Poker, and Hearts with exciting moments!",
+    "highlights": [
+      "Brandon won Canadian Salad with just 30 points.",
+      "John won Poker with $60 on the river.",
+      "Mitch won $60 in Hearts, while John stayed at 98 for 4 hands."
+    ],
+    "games": [
+      {
+        "gameId": "canadian-salad",
+        "results": [
+          { "playerId": "brandon", "position": 1, "points": 30 },
+          { "playerId": "aaron", "position": 2 },
+          { "playerId": "mitch", "position": 3 },
+          { "playerId": "john", "position": 4 },
+          { "playerId": "jeremy", "position": 5 },
+          { "playerId": "clark", "position": 6 },
+          { "playerId": "jake", "position": 7, "points": 335 }
+        ]
+      },
+      {
+        "gameId": "poker",
+        "results": [
+          { "playerId": "john", "position": 1, "winnings": 60 },
+          { "playerId": "jake", "position": 2 },
+          { "playerId": "jeremy", "position": 3 },
+          { "playerId": "clark", "position": 4 },
+          { "playerId": "brandon", "position": 5 },
+          { "playerId": "mitch", "position": 6 },
+          { "playerId": "aaron", "position": 7 }
+        ]
+      },
+      {
+        "gameId": "hearts",
+        "results": [
+          { "playerId": "mitch", "position": 1, "winnings": 60 },
+          { "playerId": "john", "position": 2, "points": 98 }
+        ]
+      }
+    ]
   }
 ]
