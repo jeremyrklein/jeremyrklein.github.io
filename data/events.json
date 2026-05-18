@@ -1,37 +1,5 @@
 [
   {
-    "id": "e2023-09",
-    "title": "Game Night - Sep 23, 2023",
-    "date": "2023-09-23",
-    "location": "",
-    "host": "",
-    "photo": "",
-    "recap": "Sequence: Jeremy 5 games and 3 series. Clark, Mitch, and Jake each had 4 games and 1 series. Poker: Jeremy won, Clark took second.",
-    "highlights": [
-      "Jeremy won 5 games and 3 series in Sequence.",
-      "Clark, Mitch, and Jake tied for 2nd place in Sequence with 4 games and 1 series each.",
-      "Jeremy won Poker, with Clark taking 2nd place."
-    ],
-    "games": [
-      {
-        "gameId": "sequence",
-        "results": [
-          { "playerId": "jeremy", "gamesWon": 5, "seriesWon": 3 },
-          { "playerId": "clark", "gamesWon": 4, "seriesWon": 1 },
-          { "playerId": "mitch", "gamesWon": 4, "seriesWon": 1 },
-          { "playerId": "jake", "gamesWon": 4, "seriesWon": 1 }
-        ]
-      },
-      {
-        "gameId": "poker",
-        "results": [
-          { "playerId": "jeremy", "position": 1 },
-          { "playerId": "clark", "position": 2 }
-        ]
-      }
-    ]
-  },
-  {
     "id": "e2026-05",
     "title": "Game Night - May 2, 2026",
     "date": "2026-05-02",
@@ -60,18 +28,116 @@
     ]
   },
   {
+    "id": "e2025-11",
+    "title": "Game Night - Nov 9, 2025",
+    "date": "2025-11-09",
+    "location": "",
+    "host": "",
+    "photo": "",
+    "recap": "Full slate: Poker, Hearts, and Canadian Salad.",
+    "highlights": [
+      "Mitch won Poker.",
+      "John won Hearts with 33 points.",
+      "Jon won Canadian Salad with 10 points."
+    ],
+    "games": [
+      {
+        "gameId": "poker",
+        "results": [
+          { "playerId": "mitch", "position": 1 },
+          { "playerId": "jon", "position": 2 },
+          { "playerId": "jeremy", "position": 3 },
+          { "playerId": "aaron", "position": 4 },
+          { "playerId": "jake", "position": 5 },
+          { "playerId": "clark", "position": 6 },
+          { "playerId": "john", "position": 7 }
+        ]
+      },
+      {
+        "gameId": "hearts",
+        "results": [
+          { "playerId": "john", "position": 1, "points": 33 },
+          { "playerId": "jon", "position": 2, "points": 45 },
+          { "playerId": "jake", "position": 3, "points": 62 },
+          { "playerId": "jeremy", "position": 4, "points": 63 },
+          { "playerId": "clark", "position": 5, "points": 73 },
+          { "playerId": "mitch", "position": 6, "points": 84 },
+          { "playerId": "aaron", "position": 7, "points": 101 }
+        ]
+      },
+      {
+        "gameId": "canadian-salad",
+        "results": [
+          { "playerId": "jon", "position": 1, "points": 10 },
+          { "playerId": "mitch", "position": 2, "points": 35 },
+          { "playerId": "jeremy", "position": 3, "points": 115 },
+          { "playerId": "aaron", "position": 4, "points": 175 },
+          { "playerId": "clark", "position": 5, "points": 185 },
+          { "playerId": "jake", "position": 6, "points": 500 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e2025-05",
+    "title": "Game Night - May 31, 2025",
+    "date": "2025-05-31",
+    "location": "",
+    "host": "",
+    "photo": "",
+    "recap": "Sequence standings tracked by games won and series won.",
+    "highlights": [
+      "Jake won Sequence with 7 games and 3 series.",
+      "Jeremy finished second with 6 games and 3 series."
+    ],
+    "games": [
+      {
+        "gameId": "sequence",
+        "results": [
+          { "playerId": "jake", "position": 1, "gamesWon": 7, "seriesWon": 3 },
+          { "playerId": "jeremy", "position": 2, "gamesWon": 6, "seriesWon": 3 },
+          { "playerId": "clark", "position": 3, "gamesWon": 5, "seriesWon": 2 },
+          { "playerId": "mitch", "position": 4, "gamesWon": 4, "seriesWon": 2 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e2025-01",
+    "title": "Game Night - Jan 18, 2025",
+    "date": "2025-01-18",
+    "location": "",
+    "host": "",
+    "photo": "",
+    "recap": "Sequence standings tracked by games won and series won.",
+    "highlights": [
+      "Jake won Sequence with 10 games and 4 series.",
+      "Clark finished second with 9 games and 4 series."
+    ],
+    "games": [
+      {
+        "gameId": "sequence",
+        "results": [
+          { "playerId": "jake", "position": 1, "gamesWon": 10, "seriesWon": 4 },
+          { "playerId": "clark", "position": 2, "gamesWon": 9, "seriesWon": 4 },
+          { "playerId": "mitch", "position": 3, "gamesWon": 8, "seriesWon": 2 },
+          { "playerId": "jeremy", "position": 4, "gamesWon": 7, "seriesWon": 2 }
+        ]
+      }
+    ]
+  },
+  {
     "id": "e2024-07",
     "title": "Game Night - Jul 20, 2024",
     "date": "2024-07-20",
     "location": "",
     "host": "",
     "photo": "",
-    "recap": "Poker: Aaron was out first then bought back in. Jeremy went out, then Clark and Aaron. Brandon won three all-in hands in a row, then lost to Jake for fourth. Mitch took third, Ben second, Jake won. Canadian Salad order: Aaron, Clark, Brandon, Jeremy, Jake, Ben, Mitch.",
+    "recap": "Poker and Canadian Salad were played, plus a full Hearts session with tracked round totals.",
     "highlights": [
-      "Aaron was out first in Poker but bought back in.",
-      "Brandon won three all-in hands in a row before losing to Jake.",
-      "Jake won Poker, with Ben coming in second and Mitch third.",
-      "Aaron dominated Canadian Salad, with Clark and Brandon following."
+      "Jake won Poker, with Ben second and Mitch third.",
+      "Aaron won Canadian Salad.",
+      "Ben won Hearts with just 5 points."
     ],
     "games": [
       {
@@ -95,6 +161,50 @@
           { "playerId": "jake", "position": 5 },
           { "playerId": "ben", "position": 6 },
           { "playerId": "mitch", "position": 7 }
+        ]
+      },
+      {
+        "gameId": "hearts",
+        "results": [
+          { "playerId": "ben", "position": 1, "points": 5 },
+          { "playerId": "aaron", "position": 2, "points": 19 },
+          { "playerId": "jake", "position": 2, "points": 19 },
+          { "playerId": "brandon", "position": 3, "points": 30 },
+          { "playerId": "mitch", "position": 4, "points": 40 },
+          { "playerId": "clark", "position": 5, "points": 70 },
+          { "playerId": "jeremy", "position": 6, "points": 109 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e2023-09",
+    "title": "Game Night - Sep 23, 2023",
+    "date": "2023-09-23",
+    "location": "",
+    "host": "",
+    "photo": "",
+    "recap": "Sequence and Poker were played. Sequence standings were tracked by games and series won.",
+    "highlights": [
+      "Jeremy won Sequence with 6 games and 3 series.",
+      "Clark, Mitch, and Jake tied on Sequence position at second.",
+      "Jeremy won Poker, with Clark taking second."
+    ],
+    "games": [
+      {
+        "gameId": "sequence",
+        "results": [
+          { "playerId": "jeremy", "position": 1, "gamesWon": 6, "seriesWon": 3 },
+          { "playerId": "clark", "position": 2, "gamesWon": 4, "seriesWon": 1 },
+          { "playerId": "mitch", "position": 2, "gamesWon": 4, "seriesWon": 1 },
+          { "playerId": "jake", "position": 2, "gamesWon": 4, "seriesWon": 1 }
+        ]
+      },
+      {
+        "gameId": "poker",
+        "results": [
+          { "playerId": "jeremy", "position": 1 },
+          { "playerId": "clark", "position": 2 }
         ]
       }
     ]
@@ -131,22 +241,22 @@
     "location": "",
     "host": "",
     "photo": "",
-    "recap": "Canadian Salad: Jake finished with 335 points, and Brandon won with 30. Poker: Aaron out first, then Mitch, then Brandon. Clark was knocked out by Jake. Jeremy out, then Jake out, and John won $60 on the river. Hearts: Mitch won $60 while John stayed at 98 for four hands.",
+    "recap": "Canadian Salad, Poker, and Hearts were all tracked with full totals.",
     "highlights": [
-      "Brandon won Canadian Salad with just 30 points.",
+      "Brandon won Canadian Salad with 30 points.",
       "John won Poker with $60 on the river.",
-      "Mitch won $60 in Hearts, while John stayed at 98 for 4 hands."
+      "Mitch won Hearts with 35 points."
     ],
     "games": [
       {
         "gameId": "canadian-salad",
         "results": [
           { "playerId": "brandon", "position": 1, "points": 30 },
-          { "playerId": "aaron", "position": 2 },
-          { "playerId": "mitch", "position": 3 },
-          { "playerId": "john", "position": 4 },
-          { "playerId": "jeremy", "position": 5 },
-          { "playerId": "clark", "position": 6 },
+          { "playerId": "john", "position": 2, "points": 35 },
+          { "playerId": "aaron", "position": 3, "points": 45 },
+          { "playerId": "mitch", "position": 4, "points": 120 },
+          { "playerId": "jeremy", "position": 5, "points": 180 },
+          { "playerId": "clark", "position": 6, "points": 300 },
           { "playerId": "jake", "position": 7, "points": 335 }
         ]
       },
@@ -165,8 +275,13 @@
       {
         "gameId": "hearts",
         "results": [
-          { "playerId": "mitch", "position": 1, "winnings": 60 },
-          { "playerId": "john", "position": 2, "points": 98 }
+          { "playerId": "mitch", "position": 1, "points": 35 },
+          { "playerId": "jake", "position": 2, "points": 41 },
+          { "playerId": "aaron", "position": 3, "points": 56 },
+          { "playerId": "jeremy", "position": 4, "points": 63 },
+          { "playerId": "brandon", "position": 5, "points": 64 },
+          { "playerId": "john", "position": 6, "points": 98 },
+          { "playerId": "clark", "position": 7, "points": 113 }
         ]
       }
     ]
@@ -203,6 +318,225 @@
           { "playerId": "mitch", "position": 5 },
           { "playerId": "hicks", "position": 6 },
           { "playerId": "jeremy", "position": 7 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e2021-12",
+    "title": "Game Night - Dec 4, 2021",
+    "date": "2021-12-04",
+    "location": "",
+    "host": "",
+    "photo": "",
+    "recap": "Poker and Canadian Salad were both recorded for this night.",
+    "highlights": [
+      "Jake won Poker.",
+      "Mitch won Canadian Salad with 0 points."
+    ],
+    "games": [
+      {
+        "gameId": "poker",
+        "results": [
+          { "playerId": "jake", "position": 1 },
+          { "playerId": "jon", "position": 2 },
+          { "playerId": "jeremy", "position": 3 },
+          { "playerId": "mitch", "position": 4 },
+          { "playerId": "brandon", "position": 4 },
+          { "playerId": "john", "position": 6 }
+        ]
+      },
+      {
+        "gameId": "canadian-salad",
+        "results": [
+          { "playerId": "mitch", "position": 1, "points": 0 },
+          { "playerId": "clark", "position": 2, "points": 40 },
+          { "playerId": "jake", "position": 3, "points": 50 },
+          { "playerId": "jeremy", "position": 4, "points": 80 },
+          { "playerId": "jon", "position": 5, "points": 120 },
+          { "playerId": "john", "position": 6, "points": 190 },
+          { "playerId": "brandon", "position": 7, "points": 510 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e2021-10",
+    "title": "Game Night - Oct 16, 2021",
+    "date": "2021-10-16",
+    "location": "",
+    "host": "",
+    "photo": "",
+    "recap": "Poker final order: Clark, Jon, Mitch, Jeremy, John, Jake.",
+    "highlights": [
+      "Clark won Poker.",
+      "Jon finished second."
+    ],
+    "games": [
+      {
+        "gameId": "poker",
+        "results": [
+          { "playerId": "clark", "position": 1 },
+          { "playerId": "jon", "position": 2 },
+          { "playerId": "mitch", "position": 3 },
+          { "playerId": "jeremy", "position": 4 },
+          { "playerId": "john", "position": 5 },
+          { "playerId": "jake", "position": 6 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e2019-10",
+    "title": "Game Night - Oct 19, 2019",
+    "date": "2019-10-19",
+    "location": "",
+    "host": "",
+    "photo": "",
+    "recap": "Poker and Hearts were tracked with final placements and Hearts totals.",
+    "highlights": [
+      "Jake won Poker.",
+      "Clark won Hearts with 42 points."
+    ],
+    "games": [
+      {
+        "gameId": "poker",
+        "results": [
+          { "playerId": "jake", "position": 1 },
+          { "playerId": "clark", "position": 2 },
+          { "playerId": "jeremy", "position": 3 },
+          { "playerId": "brandon", "position": 4 },
+          { "playerId": "mitch", "position": 5 },
+          { "playerId": "john", "position": 6 }
+        ]
+      },
+      {
+        "gameId": "hearts",
+        "results": [
+          { "playerId": "clark", "position": 1, "points": 42 },
+          { "playerId": "mitch", "position": 2, "points": 57 },
+          { "playerId": "jeremy", "position": 3, "points": 63 },
+          { "playerId": "jake", "position": 4, "points": 68 },
+          { "playerId": "john", "position": 5, "points": 86 },
+          { "playerId": "brandon", "position": 6, "points": 102 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e2019-01",
+    "title": "Game Night - Jan 19, 2019",
+    "date": "2019-01-19",
+    "location": "",
+    "host": "",
+    "photo": "",
+    "recap": "Poker and Hearts were tracked with complete standings.",
+    "highlights": [
+      "Brandon won Poker.",
+      "Brandon also won Hearts with 22 points."
+    ],
+    "games": [
+      {
+        "gameId": "poker",
+        "results": [
+          { "playerId": "brandon", "position": 1 },
+          { "playerId": "jake", "position": 2 },
+          { "playerId": "jon", "position": 3 },
+          { "playerId": "clark", "position": 4 },
+          { "playerId": "mitch", "position": 5 },
+          { "playerId": "jeremy", "position": 6 },
+          { "playerId": "john", "position": 7 }
+        ]
+      },
+      {
+        "gameId": "hearts",
+        "results": [
+          { "playerId": "brandon", "position": 1, "points": 22 },
+          { "playerId": "jon", "position": 2, "points": 35 },
+          { "playerId": "clark", "position": 3, "points": 59 },
+          { "playerId": "mitch", "position": 4, "points": 60 },
+          { "playerId": "jake", "position": 5, "points": 71 },
+          { "playerId": "jeremy", "position": 6, "points": 93 },
+          { "playerId": "john", "position": 7, "points": 105 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e2018-10",
+    "title": "Game Night - Oct 17, 2018",
+    "date": "2018-10-17",
+    "location": "",
+    "host": "",
+    "photo": "",
+    "recap": "Blackjack, Poker, and Hearts were tracked for this night.",
+    "highlights": [
+      "John won Blackjack.",
+      "Mitch won Poker.",
+      "Jake won Hearts with 16 points."
+    ],
+    "games": [
+      {
+        "gameId": "blackjack",
+        "results": [
+          { "playerId": "john", "position": 1 },
+          { "playerId": "clark", "position": 2 }
+        ]
+      },
+      {
+        "gameId": "poker",
+        "results": [
+          { "playerId": "mitch", "position": 1 },
+          { "playerId": "jeremy", "position": 2 },
+          { "playerId": "brandon", "position": 3 }
+        ]
+      },
+      {
+        "gameId": "hearts",
+        "results": [
+          { "playerId": "jake", "position": 1, "points": 16 },
+          { "playerId": "brandon", "position": 2, "points": 23 },
+          { "playerId": "john", "position": 3, "points": 31 },
+          { "playerId": "clark", "position": 4, "points": 32 },
+          { "playerId": "jeremy", "position": 5, "points": 50 },
+          { "playerId": "mitch", "position": 6, "points": 88 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e2018-02",
+    "title": "Game Night - Feb 24, 2018",
+    "date": "2018-02-24",
+    "location": "",
+    "host": "",
+    "photo": "",
+    "recap": "Blackjack, Poker, and Hearts with winnings tracked.",
+    "highlights": [
+      "Jake won Blackjack with $35.",
+      "Brandon won Poker with $35.",
+      "Clark won Hearts with $10."
+    ],
+    "games": [
+      {
+        "gameId": "blackjack",
+        "results": [
+          { "playerId": "jake", "position": 1, "winnings": 35 },
+          { "playerId": "mitch", "position": 2, "winnings": 5 }
+        ]
+      },
+      {
+        "gameId": "poker",
+        "results": [
+          { "playerId": "brandon", "position": 1, "winnings": 35 },
+          { "playerId": "clark", "position": 2, "winnings": 5 }
+        ]
+      },
+      {
+        "gameId": "hearts",
+        "results": [
+          { "playerId": "clark", "position": 1, "winnings": 10 },
+          { "playerId": "mitch", "position": 2, "winnings": 2 }
         ]
       }
     ]
