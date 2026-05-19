@@ -101,6 +101,7 @@ export default function EventArchive({ data, playersById, gameTypesById }) {
                   const hasSeriesWon = results.some((result) => Number.isFinite(Number(result.seriesWon)))
                   const hasPoints = results.some((result) => Number.isFinite(Number(result.points)))
                   const hasWinnings = results.some((result) => Number.isFinite(Number(result.winnings)))
+                  const rounds = Array.isArray(game.rounds) ? game.rounds : []
 
                   const winner = [...results].sort((a, b) => {
                     if (hasPosition) {
@@ -202,6 +203,48 @@ export default function EventArchive({ data, playersById, gameTypesById }) {
                               </tbody>
                             </table>
                           </div>
+
+                          {rounds.length > 0 ? (
+                            <div className="game-results-table">
+                              <p className="small-title" style={{ marginBottom: '0.5rem' }}>
+                                Round Breakdown
+                              </p>
+                              <table>
+                                <thead>
+                                  <tr>
+                                    <th>Round</th>
+                                    {results.map((result) => (
+                                      <th key={`${game.id}-${result.playerId}-round-head`}>
+                                        {result.playerName}
+                                      </th>
+                                    ))}
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  {rounds.map((round, roundIndex) => {
+                                    const valuesByPlayerId = Object.fromEntries(
+                                      (round.values || []).map((value) => [value.playerId, value.value]),
+                                    )
+                                    const roundLabel = [round.step, round.label].filter(Boolean).join(' - ')
+
+                                    return (
+                                      <tr key={`${game.id}-round-${roundIndex}`}>
+                                        <td>{roundLabel || `Round ${roundIndex + 1}`}</td>
+                                        {results.map((result) => (
+                                          <td key={`${game.id}-round-${roundIndex}-${result.playerId}`}>
+                                            {valuesByPlayerId[result.playerId] !== '' &&
+                                            valuesByPlayerId[result.playerId] !== undefined
+                                              ? String(valuesByPlayerId[result.playerId])
+                                              : '—'}
+                                          </td>
+                                        ))}
+                                      </tr>
+                                    )
+                                  })}
+                                </tbody>
+                              </table>
+                            </div>
+                          ) : null}
                         </div>
                       </details>
                     </section>

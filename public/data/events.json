@@ -60,6 +60,7 @@
             "position": 7
           }
         ],
+        "rounds": [],
         "winnerId": "p01"
       },
       {
@@ -109,6 +110,7 @@
             "position": 7
           }
         ],
+        "rounds": [],
         "winnerId": "p10"
       },
       {
@@ -161,6 +163,7 @@
             "position": 7
           }
         ],
+        "rounds": [],
         "winnerId": "p03"
       }
     ]
@@ -220,6 +223,7 @@
             "position": 6
           }
         ],
+        "rounds": [],
         "winnerId": "p06"
       },
       {
@@ -272,6 +276,7 @@
             "moonShots": 2
           }
         ],
+        "rounds": [],
         "winnerId": "p01"
       },
       {
@@ -315,6 +320,7 @@
             "position": 6
           }
         ],
+        "rounds": [],
         "winnerId": "p04"
       }
     ]
@@ -379,6 +385,7 @@
             "position": 7
           }
         ],
+        "rounds": [],
         "winnerId": "p10"
       },
       {
@@ -438,6 +445,7 @@
             "moonShots": 2
           }
         ],
+        "rounds": [],
         "winnerId": "p10"
       }
     ]
@@ -505,6 +513,7 @@
             "position": 6
           }
         ],
+        "rounds": [],
         "winnerId": "p03"
       },
       {
@@ -548,6 +557,7 @@
             "position": 6
           }
         ],
+        "rounds": [],
         "winnerId": "p01"
       }
     ]
@@ -601,6 +611,7 @@
             "position": 1
           }
         ],
+        "rounds": [],
         "winnerId": "p03"
       }
     ]
@@ -654,6 +665,7 @@
             "position": 3
           }
         ],
+        "rounds": [],
         "winnerId": "p01"
       }
     ]
@@ -713,6 +725,7 @@
             "position": 6
           }
         ],
+        "rounds": [],
         "winnerId": "p03"
       },
       {
@@ -765,6 +778,512 @@
             "moonShots": 2
           }
         ],
+        "rounds": [
+          {
+            "step": "1",
+            "label": "1 left",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 2
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 24
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "2",
+            "label": "2 left",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 3
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 21
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 2
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "3",
+            "label": "3 left",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 5
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 36
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 34
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "step": "4",
+            "label": "1 right",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 26
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 31
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 36
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 60
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 26
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 29
+              }
+            ]
+          },
+          {
+            "step": "5",
+            "label": "2 right",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 26
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 31
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 18
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 64
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 26
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 29
+              }
+            ]
+          },
+          {
+            "step": "6",
+            "label": "3 right",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 43
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 33
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 54
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 67
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 30
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 33
+              }
+            ]
+          },
+          {
+            "step": "7",
+            "label": "Hold",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 43
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 47
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 59
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 67
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 33
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 37
+              }
+            ]
+          },
+          {
+            "step": "8",
+            "label": "1 left",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 43
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 47
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 59
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 70
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 48
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 45
+              }
+            ]
+          },
+          {
+            "step": "9",
+            "label": "2 left",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 43
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 47
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 69
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 70
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 48
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 61
+              }
+            ]
+          },
+          {
+            "step": "10",
+            "label": "3 left",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 43
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 55
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 69
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 85
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 48
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 64
+              }
+            ]
+          },
+          {
+            "step": "11",
+            "label": "1 right",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 69
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 81
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 95
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 85
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 74
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 90
+              }
+            ]
+          },
+          {
+            "step": "12",
+            "label": "2 right",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 95
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 107
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 95
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 111
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 100
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 116
+              }
+            ]
+          }
+        ],
         "winnerId": "p01"
       },
       {
@@ -812,6 +1331,512 @@
             "sourceName": "John",
             "points": 155,
             "position": 3
+          }
+        ],
+        "rounds": [
+          {
+            "step": "",
+            "label": "No Tricks",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 10
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 10
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 60
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 20
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 40
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Hearts",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 50
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 25
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 75
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 70
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Queens",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 35
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 60
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 135
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 100
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 100
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No King of Spades",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 35
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 130
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 10
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Last Trick",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 95
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "All",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 20
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Tricks",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 10
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 20
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 20
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 20
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 10
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Hearts",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 110
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 50
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 20
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 50
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 100
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 10
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Queens",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 100
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 25
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 10
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 135
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No King of Spades",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 85
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 10
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Last Trick",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 55
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "All",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 155
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              }
+            ]
           }
         ],
         "winnerId": "p02"
@@ -886,6 +1911,296 @@
             "position": 1
           }
         ],
+        "rounds": [
+          {
+            "step": "",
+            "label": "No Tricks",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 50
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 0
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Hearts",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 50
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 10
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 10
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 10
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Queens",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 50
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 10
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 120
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 80
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 110
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 110
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No King of Spades",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 50
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 30
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 140
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 80
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 210
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 120
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Last Trick",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 50
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 40
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 190
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 80
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 400
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 120
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "All",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 50
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 40
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 190
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 80
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 510
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 120
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              }
+            ]
+          }
+        ],
         "winnerId": "p04"
       },
       {
@@ -935,6 +2250,7 @@
             "position": 7
           }
         ],
+        "rounds": [],
         "winnerId": "p01"
       },
       {
@@ -992,6 +2308,776 @@
             "sourceName": "Jon",
             "points": 64,
             "position": 2
+          }
+        ],
+        "rounds": [
+          {
+            "step": "1",
+            "label": "1 Left",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 26
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 26
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 26
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 26
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 26
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 26
+              }
+            ]
+          },
+          {
+            "step": "2",
+            "label": "2 Left",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 21
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 1
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 4
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "3",
+            "label": "3 Left",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 7
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 4
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 15
+              }
+            ]
+          },
+          {
+            "step": "4",
+            "label": "1 Right",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 6
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 18
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 0
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "step": "5",
+            "label": "2 Right",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 25
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 1
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 0
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "6",
+            "label": "3 Right",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 7
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 3
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 1
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 15
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "7",
+            "label": "Hold",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 6
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 17
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 3
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "8",
+            "label": "1 Left",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 4
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 2
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 14
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 6
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "9",
+            "label": "2 Left",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 5
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 5
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 1
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 13
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "step": "10",
+            "label": "3 Left",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 5
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 1
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 20
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 0
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "11",
+            "label": "1 Right",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 3
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 13
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 3
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 7
+              }
+            ]
+          },
+          {
+            "step": "12",
+            "label": "2 Right",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 3
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 22
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 1
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "13",
+            "label": "3 Right",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 2
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 17
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 7
+              }
+            ]
+          },
+          {
+            "step": "14",
+            "label": "Hold",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 20
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 4
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 2
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 0
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "15",
+            "label": "1 Left",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 4
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 22
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 0
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "16",
+            "label": "2 Left",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 2
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 24
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 0
+              }
+            ]
           }
         ],
         "winnerId": "p04"
@@ -1065,6 +3151,296 @@
             "position": 2
           }
         ],
+        "rounds": [
+          {
+            "step": "",
+            "label": "No Tricks",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 20
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 30
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 10
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Hearts",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 20
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 60
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 50
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 70
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Queens",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 20
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 60
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 125
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 95
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No King of Spades",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 20
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 160
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 125
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 95
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Last Trick",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 20
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 160
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 225
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 95
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "All",
+            "values": [
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 200
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 350
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 225
+              },
+              {
+                "playerId": "p05",
+                "playerName": "Jon Hicks",
+                "sourceName": "Jon",
+                "value": 95
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 90
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              }
+            ]
+          }
+        ],
         "winnerId": "p01"
       },
       {
@@ -1114,6 +3490,7 @@
             "position": 7
           }
         ],
+        "rounds": [],
         "winnerId": "p01"
       }
     ]
@@ -1167,6 +3544,7 @@
             "position": 1
           }
         ],
+        "rounds": [],
         "winnerId": "p04"
       }
     ]
@@ -1239,6 +3617,296 @@
             "position": 7
           }
         ],
+        "rounds": [
+          {
+            "step": "",
+            "label": "No Tricks",
+            "values": [
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 10
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 30
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 10
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 10
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 20
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 13
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Hearts",
+            "values": [
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 70
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 60
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 0
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 22
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Queens",
+            "values": [
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 75
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 25
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No King of Spades",
+            "values": [
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 100
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 0
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Last Trick",
+            "values": [
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 100
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 0
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "All",
+            "values": [
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 35
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 65
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 290
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 110
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 0
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 0
+              }
+            ]
+          }
+        ],
         "winnerId": "p10"
       },
       {
@@ -1298,6 +3966,584 @@
             "moonShots": 2
           }
         ],
+        "rounds": [
+          {
+            "step": "1",
+            "label": "1 Left",
+            "values": [
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 4
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 13
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 4
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "step": "2",
+            "label": "2 Left",
+            "values": [
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 30
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 26
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 41
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 26
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 30
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 31
+              }
+            ]
+          },
+          {
+            "step": "3",
+            "label": "3 Left",
+            "values": [
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 30
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 26
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 41
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 26
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 39
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 46
+              }
+            ]
+          },
+          {
+            "step": "4",
+            "label": "1 Right",
+            "values": [
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 36
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 26
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 41
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 26
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 39
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 66
+              }
+            ]
+          },
+          {
+            "step": "5",
+            "label": "2 Right",
+            "values": [
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 36
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 26
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 41
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 48
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 4
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 39
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 66
+              }
+            ]
+          },
+          {
+            "step": "6",
+            "label": "3 Right",
+            "values": [
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 36
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 26
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 64
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 48
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 7
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 39
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 66
+              }
+            ]
+          },
+          {
+            "step": "7",
+            "label": "Hold",
+            "values": [
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 36
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 26
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 64
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 66
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 15
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 39
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 82
+              }
+            ]
+          },
+          {
+            "step": "8",
+            "label": "1 Left",
+            "values": [
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 43
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 26
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 64
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 66
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 15
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 42
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 82
+              }
+            ]
+          },
+          {
+            "step": "9",
+            "label": "2 Left",
+            "values": [
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 43
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 39
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 64
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 66
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 28
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 42
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 98
+              }
+            ]
+          },
+          {
+            "step": "10",
+            "label": "3 Left",
+            "values": [
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 43
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 41
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 64
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 74
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 28
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 42
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 98
+              }
+            ]
+          },
+          {
+            "step": "11",
+            "label": "1 Right",
+            "values": [
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 63
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 41
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 64
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 82
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 28
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 42
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 98
+              }
+            ]
+          },
+          {
+            "step": "12",
+            "label": "2 Right",
+            "values": [
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 63
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 41
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 64
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 94
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 28
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 56
+              },
+              {
+                "playerId": "p06",
+                "playerName": "John Sargent",
+                "sourceName": "John",
+                "value": 98
+              }
+            ]
+          }
+        ],
         "winnerId": "p04"
       },
       {
@@ -1347,6 +4593,7 @@
             "position": 7
           }
         ],
+        "rounds": [],
         "winnerId": "p06"
       }
     ]
@@ -1400,6 +4647,7 @@
             "position": 4
           }
         ],
+        "rounds": [],
         "winnerId": "p04"
       }
     ]
@@ -1476,6 +4724,7 @@
             "position": 9
           }
         ],
+        "rounds": [],
         "winnerId": "p02"
       },
       {
@@ -1515,6 +4764,7 @@
             "position": 2
           }
         ],
+        "rounds": [],
         "winnerId": "p02"
       }
     ]
@@ -1573,6 +4823,7 @@
             "position": 6
           }
         ],
+        "rounds": [],
         "winnerId": "p03"
       },
       {
@@ -1624,6 +4875,7 @@
             "moonShots": 2
           }
         ],
+        "rounds": [],
         "winnerId": "p11"
       }
     ]
@@ -1698,6 +4950,344 @@
             "position": 4
           }
         ],
+        "rounds": [
+          {
+            "step": "1",
+            "label": "1 Left",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 8
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 0
+              },
+              {
+                "playerId": "p09",
+                "playerName": "Ben Feely",
+                "sourceName": "Ben",
+                "value": 5
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 15
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 17
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 21
+              }
+            ]
+          },
+          {
+            "step": "2",
+            "label": "2 Left",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 9
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 4
+              },
+              {
+                "playerId": "p09",
+                "playerName": "Ben Feely",
+                "sourceName": "Ben",
+                "value": 5
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 33
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 19
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 7
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 29
+              }
+            ]
+          },
+          {
+            "step": "3",
+            "label": "3 Left",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 33
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 9
+              },
+              {
+                "playerId": "p09",
+                "playerName": "Ben Feely",
+                "sourceName": "Ben",
+                "value": 5
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 59
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 19
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 27
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 30
+              }
+            ]
+          },
+          {
+            "step": "4",
+            "label": "1 Right",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 40
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 11
+              },
+              {
+                "playerId": "p09",
+                "playerName": "Ben Feely",
+                "sourceName": "Ben",
+                "value": 5
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 60
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 19
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 42
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 30
+              }
+            ]
+          },
+          {
+            "step": "5",
+            "label": "2 Right",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 40
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 15
+              },
+              {
+                "playerId": "p09",
+                "playerName": "Ben Feely",
+                "sourceName": "Ben",
+                "value": 5
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 64
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 19
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 65
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 30
+              }
+            ]
+          },
+          {
+            "step": "6",
+            "label": "3 Right",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 40
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 17
+              },
+              {
+                "playerId": "p09",
+                "playerName": "Ben Feely",
+                "sourceName": "Ben",
+                "value": 5
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 88
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 19
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 70
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 30
+              }
+            ]
+          },
+          {
+            "step": "7",
+            "label": "Hold",
+            "values": [
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 40
+              },
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 19
+              },
+              {
+                "playerId": "p09",
+                "playerName": "Ben Feely",
+                "sourceName": "Ben",
+                "value": 5
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 109
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 19
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 70
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 30
+              }
+            ]
+          }
+        ],
         "winnerId": "p09"
       },
       {
@@ -1747,6 +5337,7 @@
             "position": 7
           }
         ],
+        "rounds": [],
         "winnerId": "p01"
       },
       {
@@ -1803,6 +5394,296 @@
             "position": 7
           }
         ],
+        "rounds": [
+          {
+            "step": "",
+            "label": "No Tricks",
+            "values": [
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 20
+              },
+              {
+                "playerId": "p09",
+                "playerName": "Ben Feely",
+                "sourceName": "Ben",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 10
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 30
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 10
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Hearts",
+            "values": [
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 0
+              },
+              {
+                "playerId": "p09",
+                "playerName": "Ben Feely",
+                "sourceName": "Ben",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 20
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 110
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Queens",
+            "values": [
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 0
+              },
+              {
+                "playerId": "p09",
+                "playerName": "Ben Feely",
+                "sourceName": "Ben",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 75
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 25
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No King of Spades",
+            "values": [
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 0
+              },
+              {
+                "playerId": "p09",
+                "playerName": "Ben Feely",
+                "sourceName": "Ben",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": ""
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 100
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "No Last Trick",
+            "values": [
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 0
+              },
+              {
+                "playerId": "p09",
+                "playerName": "Ben Feely",
+                "sourceName": "Ben",
+                "value": 0
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 0
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 100
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 0
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 0
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "step": "",
+            "label": "All",
+            "values": [
+              {
+                "playerId": "p07",
+                "playerName": "Aaron Grefsrud",
+                "sourceName": "Aaron",
+                "value": 20
+              },
+              {
+                "playerId": "p09",
+                "playerName": "Ben Feely",
+                "sourceName": "Ben",
+                "value": 210
+              },
+              {
+                "playerId": "p02",
+                "playerName": "Jeremy Klein",
+                "sourceName": "Jeremy",
+                "value": 135
+              },
+              {
+                "playerId": "p01",
+                "playerName": "Jake Klein",
+                "sourceName": "Jake",
+                "value": 0
+              },
+              {
+                "playerId": "p03",
+                "playerName": "Clark Close",
+                "sourceName": "Clark",
+                "value": 45
+              },
+              {
+                "playerId": "p10",
+                "playerName": "Brandon Ford",
+                "sourceName": "Brandon",
+                "value": 55
+              },
+              {
+                "playerId": "p04",
+                "playerName": "Mitch Stuard",
+                "sourceName": "Mitch",
+                "value": 10
+              }
+            ]
+          }
+        ],
         "winnerId": "p07"
       }
     ]
@@ -1856,6 +5737,7 @@
             "position": 1
           }
         ],
+        "rounds": [],
         "winnerId": "p01"
       }
     ]
@@ -1909,6 +5791,7 @@
             "position": 3
           }
         ],
+        "rounds": [],
         "winnerId": "p01"
       }
     ]
@@ -1950,6 +5833,7 @@
             "sourceName": "Jake"
           }
         ],
+        "rounds": [],
         "winnerId": "p02"
       }
     ]
@@ -2007,6 +5891,7 @@
             "position": 6
           }
         ],
+        "rounds": [],
         "winnerId": "p01"
       }
     ]

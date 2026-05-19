@@ -558,6 +558,7 @@ function App() {
                           const hasSeriesWon = results.some((r) => Number.isFinite(Number(r.seriesWon)))
                           const hasPoints = results.some((r) => Number.isFinite(Number(r.points)))
                           const hasWinnings = results.some((r) => Number.isFinite(Number(r.winnings)))
+                          const rounds = Array.isArray(game.rounds) ? game.rounds : []
 
                           const fallbackWinner = [...results].sort((a, b) => {
                             if (hasPosition) {
@@ -672,6 +673,48 @@ function App() {
                                       </tbody>
                                     </table>
                                   </div>
+
+                                  {rounds.length > 0 ? (
+                                    <div className="game-results-table">
+                                      <p className="small-title" style={{ marginBottom: '0.5rem' }}>
+                                        Round Breakdown
+                                      </p>
+                                      <table>
+                                        <thead>
+                                          <tr>
+                                            <th>Round</th>
+                                            {results.map((result) => (
+                                              <th key={`${event.id}-${game.gameId}-${result.playerId}-round-head`}>
+                                                {result.playerName}
+                                              </th>
+                                            ))}
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          {rounds.map((round, roundIndex) => {
+                                            const valuesByPlayerId = Object.fromEntries(
+                                              (round.values || []).map((value) => [value.playerId, value.value]),
+                                            )
+                                            const roundLabel = [round.step, round.label].filter(Boolean).join(' - ')
+
+                                            return (
+                                              <tr key={`${event.id}-${game.gameId}-round-${roundIndex}`}>
+                                                <td>{roundLabel || `Round ${roundIndex + 1}`}</td>
+                                                {results.map((result) => (
+                                                  <td key={`${event.id}-${game.gameId}-round-${roundIndex}-${result.playerId}`}>
+                                                    {valuesByPlayerId[result.playerId] !== '' &&
+                                                    valuesByPlayerId[result.playerId] !== undefined
+                                                      ? String(valuesByPlayerId[result.playerId])
+                                                      : '—'}
+                                                  </td>
+                                                ))}
+                                              </tr>
+                                            )
+                                          })}
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  ) : null}
                                 </div>
                               </details>
                             </section>

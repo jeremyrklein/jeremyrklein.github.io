@@ -138,6 +138,17 @@ def key(value: object) -> str:
     return clean(value).lower()
 
 
+def parse_value(value: str) -> object:
+    cleaned = clean(value)
+    if not cleaned:
+        return ""
+    if re.fullmatch(r"-?\d+", cleaned):
+        return int(cleaned)
+    if re.fullmatch(r"-?\d+\.\d+", cleaned):
+        return float(cleaned)
+    return cleaned
+
+
 def is_date(value: str) -> bool:
     return bool(VALID_DATE.match(value))
 
@@ -471,7 +482,7 @@ def main() -> int:
                     participation_dates[player_id].add(date_value)
 
             if game is None:
-                game = {"gameId": game_id, "notes": clean(row[4]), "results": []}
+                game = {"gameId": game_id, "notes": clean(row[4]), "results": [], "rounds": []}
                 event["games"].append(game)
 
             if not game.get("notes") and clean(row[4]):
@@ -501,6 +512,32 @@ def main() -> int:
 
         player_names = [str(result.get("sourceName", result.get("playerName", ""))).strip() for result in game["results"]]
         values = [clean(value) for value in row[8 : 8 + len(player_names)]]
+
+        if kind not in {"Place", "Games", "Series", "Total"}:
+            round_values = []
+            for index, value in enumerate(values):
+                player_name = player_names[index]
+                player_id = resolve_player_id(player_name, player_lookup)
+                if not player_id:
+                    continue
+                round_values.append(
+                    {
+                        "playerId": player_id,
+                        "playerName": next((player["name"] for player in players if player["id"] == player_id), player_name),
+                        "sourceName": player_name,
+                        "value": parse_value(value),
+                    }
+                )
+
+            if round_values:
+                game.setdefault("rounds", []).append(
+                    {
+                        "step": clean(row[6]),
+                        "label": kind,
+                        "values": round_values,
+                    }
+                )
+            continue
 
         for index, value in enumerate(values):
             if not value:
