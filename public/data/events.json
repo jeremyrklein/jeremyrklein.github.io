@@ -6,11 +6,11 @@
     "location": "",
     "host": "",
     "photo": "",
-    "recap": "Blackjack: Jon Hicks won Blackjack. Poker: Jon Hicks won Poker. Hearts: Jon Hicks won Hearts.",
+    "recap": "Blackjack: Jake Klein won Blackjack. Poker: Brandon Ford won Poker. Hearts: Clark Close won Hearts.",
     "highlights": [
-      "Jon Hicks won Blackjack.",
-      "Jon Hicks won Poker.",
-      "Jon Hicks won Hearts."
+      "Jake Klein won Blackjack.",
+      "Brandon Ford won Poker.",
+      "Clark Close won Hearts."
     ],
     "games": [
       {
@@ -20,32 +20,38 @@
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Jon"
+            "sourceName": "Jake",
+            "position": 1
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Jon"
+            "sourceName": "Mitch",
+            "position": 2
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Jon"
+            "sourceName": "Jeremy",
+            "position": 7
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "Jon"
+            "sourceName": "Brandon",
+            "position": 7
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Jon"
+            "sourceName": "Clark",
+            "position": 7
           },
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "Jon"
+            "sourceName": "John",
+            "position": 7
           },
           {
             "playerId": "p05",
@@ -62,32 +68,38 @@
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "Jon"
+            "sourceName": "Brandon",
+            "position": 1
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Jon"
+            "sourceName": "Clark",
+            "position": 2
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Jon"
+            "sourceName": "Jeremy",
+            "position": 7
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Jon"
+            "sourceName": "Jake",
+            "position": 7
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Jon"
+            "sourceName": "Mitch",
+            "position": 7
           },
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "Jon"
+            "sourceName": "John",
+            "position": 7
           },
           {
             "playerId": "p05",
@@ -104,34 +116,40 @@
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Jon"
+            "sourceName": "Clark",
+            "position": 1
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Jon",
+            "sourceName": "Mitch",
+            "position": 2,
             "moonShots": 2
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Jon",
+            "sourceName": "Jeremy",
+            "position": 7,
             "moonShots": 1
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Jon"
+            "sourceName": "Jake",
+            "position": 7
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "Jon"
+            "sourceName": "Brandon",
+            "position": 7
           },
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "Jon",
+            "sourceName": "John",
+            "position": 7,
             "moonShots": 2
           },
           {
@@ -151,11 +169,11 @@
     "location": "",
     "host": "",
     "photo": "",
-    "recap": "Blackjack: Mitch Stuard won Blackjack. Hearts: Mitch Stuard won Hearts with 88 points. Poker: Jake Klein won Poker.",
+    "recap": "Blackjack: John Sargent won Blackjack. Hearts: Jake Klein won Hearts with 16 points. Poker: Mitch Stuard won Poker.",
     "highlights": [
-      "Mitch Stuard won Blackjack.",
-      "Mitch Stuard won Hearts with 88 points.",
-      "Jake Klein won Poker."
+      "John Sargent won Blackjack.",
+      "Jake Klein won Hearts with 16 points.",
+      "Mitch Stuard won Poker."
     ],
     "games": [
       {
@@ -165,27 +183,32 @@
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "Mitch"
+            "sourceName": "John",
+            "position": 1
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Mitch"
+            "sourceName": "Clark",
+            "position": 2
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Mitch"
+            "sourceName": "Jeremy",
+            "position": 3
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Mitch"
+            "sourceName": "Jake",
+            "position": 4
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "Mitch"
+            "sourceName": "Brandon",
+            "position": 5
           },
           {
             "playerId": "p04",
@@ -202,28 +225,38 @@
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Mitch"
+            "sourceName": "Jake",
+            "points": 16,
+            "position": 1
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "Mitch"
+            "sourceName": "Brandon",
+            "points": 23,
+            "position": 2
           },
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "Mitch",
+            "sourceName": "John",
+            "points": 31,
+            "position": 3,
             "moonShots": 2
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Mitch"
+            "sourceName": "Clark",
+            "points": 32,
+            "position": 4
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Mitch",
+            "sourceName": "Jeremy",
+            "points": 50,
+            "position": 5,
             "moonShots": 1
           },
           {
@@ -243,27 +276,32 @@
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Jake"
+            "sourceName": "Mitch",
+            "position": 1
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Jake"
+            "sourceName": "Jeremy",
+            "position": 2
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "Jake"
+            "sourceName": "Brandon",
+            "position": 3
           },
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "Jake"
+            "sourceName": "John",
+            "position": 4
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Jake"
+            "sourceName": "Clark",
+            "position": 5
           },
           {
             "playerId": "p01",
@@ -282,10 +320,10 @@
     "location": "Brandon's East Renton Highlands House",
     "host": "",
     "photo": "",
-    "recap": "Poker: John Sargent won Poker. Hearts: John Sargent won Hearts with 105 points.",
+    "recap": "Poker: Brandon Ford won Poker. Hearts: Brandon Ford won Hearts with 22 points.",
     "highlights": [
-      "John Sargent won Poker.",
-      "John Sargent won Hearts with 105 points."
+      "Brandon Ford won Poker.",
+      "Brandon Ford won Hearts with 22 points."
     ],
     "games": [
       {
@@ -295,32 +333,38 @@
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "John"
+            "sourceName": "Brandon",
+            "position": 1
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "John"
+            "sourceName": "Jake",
+            "position": 2
           },
           {
             "playerId": "p05",
             "playerName": "Jon Hicks",
-            "sourceName": "John"
+            "sourceName": "Jon",
+            "position": 3
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "John"
+            "sourceName": "Clark",
+            "position": 4
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "John"
+            "sourceName": "Mitch",
+            "position": 5
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "John"
+            "sourceName": "Jeremy",
+            "position": 6
           },
           {
             "playerId": "p06",
@@ -337,33 +381,45 @@
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "John"
+            "sourceName": "Brandon",
+            "points": 22,
+            "position": 1
           },
           {
             "playerId": "p05",
             "playerName": "Jon Hicks",
-            "sourceName": "John"
+            "sourceName": "Jon",
+            "points": 35,
+            "position": 2
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "John"
+            "sourceName": "Clark",
+            "points": 59,
+            "position": 3
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "John",
+            "sourceName": "Mitch",
+            "points": 60,
+            "position": 4,
             "moonShots": 2
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "John"
+            "sourceName": "Jake",
+            "points": 71,
+            "position": 5
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "John",
+            "sourceName": "Jeremy",
+            "points": 93,
+            "position": 6,
             "moonShots": 1
           },
           {
@@ -385,10 +441,10 @@
     "location": "",
     "host": "",
     "photo": "",
-    "recap": "Hearts: Brandon Ford won Hearts with 102 points. Poker: John Sargent won Poker.",
+    "recap": "Hearts: Clark Close won Hearts with 42 points. Poker: Jake Klein won Poker.",
     "highlights": [
-      "Brandon Ford won Hearts with 102 points.",
-      "John Sargent won Poker."
+      "Clark Close won Hearts with 42 points.",
+      "Jake Klein won Poker."
     ],
     "games": [
       {
@@ -398,29 +454,39 @@
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Brandon"
+            "sourceName": "Clark",
+            "points": 42,
+            "position": 1
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Brandon",
+            "sourceName": "Mitch",
+            "points": 57,
+            "position": 2,
             "moonShots": 2
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Brandon",
+            "sourceName": "Jeremy",
+            "points": 63,
+            "position": 3,
             "moonShots": 1
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Brandon"
+            "sourceName": "Jake",
+            "points": 68,
+            "position": 4
           },
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "Brandon",
+            "sourceName": "John",
+            "points": 86,
+            "position": 5,
             "moonShots": 2
           },
           {
@@ -439,27 +505,32 @@
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "John"
+            "sourceName": "Jake",
+            "position": 1
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "John"
+            "sourceName": "Clark",
+            "position": 2
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "John"
+            "sourceName": "Jeremy",
+            "position": 3
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "John"
+            "sourceName": "Brandon",
+            "position": 4
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "John"
+            "sourceName": "Mitch",
+            "position": 5
           },
           {
             "playerId": "p06",
@@ -478,9 +549,9 @@
     "location": "Clark's Maple Valley House",
     "host": "",
     "photo": "",
-    "recap": "Sequence: Jeremy Klein won Sequence with 13 games and 6 series.",
+    "recap": "Sequence: Clark Close won Sequence with 13 games and 6 series.",
     "highlights": [
-      "Jeremy Klein won Sequence with 13 games and 6 series."
+      "Clark Close won Sequence with 13 games and 6 series."
     ],
     "games": [
       {
@@ -490,17 +561,26 @@
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Jeremy"
+            "sourceName": "Mitch",
+            "gamesWon": 10,
+            "seriesWon": 4,
+            "position": 3
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Jeremy"
+            "sourceName": "Clark",
+            "gamesWon": 13,
+            "seriesWon": 6,
+            "position": 1
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Jeremy"
+            "sourceName": "Jake",
+            "gamesWon": 8,
+            "seriesWon": 2,
+            "position": 4
           },
           {
             "playerId": "p02",
@@ -521,9 +601,9 @@
     "location": "Jeremy's East Renton Highlands 15111 House",
     "host": "",
     "photo": "",
-    "recap": "Sequence: Jeremy Klein won Sequence with 11 games and 3 series.",
+    "recap": "Sequence: Jake Klein won Sequence with 15 games and 7 series.",
     "highlights": [
-      "Jeremy Klein won Sequence with 11 games and 3 series."
+      "Jake Klein won Sequence with 15 games and 7 series."
     ],
     "games": [
       {
@@ -533,17 +613,26 @@
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Jeremy"
+            "sourceName": "Mitch",
+            "gamesWon": 11,
+            "seriesWon": 4,
+            "position": 2
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Jeremy"
+            "sourceName": "Clark",
+            "gamesWon": 7,
+            "seriesWon": 2,
+            "position": 4
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Jeremy"
+            "sourceName": "Jake",
+            "gamesWon": 15,
+            "seriesWon": 7,
+            "position": 1
           },
           {
             "playerId": "p02",
@@ -564,11 +653,11 @@
     "location": "Jeremy's East Renton Highlands Shop",
     "host": "",
     "photo": "",
-    "recap": "Poker: Jake Klein won Poker. Hearts: Mitch Stuard won Hearts with 116 points. Canadian Salad: John Sargent won Canadian Salad with 155 points.",
+    "recap": "Poker: Clark Close won Poker. Hearts: Jake Klein won Hearts with 95 points. Canadian Salad: Jeremy Klein won Canadian Salad with 40 points.",
     "highlights": [
-      "Jake Klein won Poker.",
-      "Mitch Stuard won Hearts with 116 points.",
-      "John Sargent won Canadian Salad with 155 points."
+      "Clark Close won Poker.",
+      "Jake Klein won Hearts with 95 points.",
+      "Jeremy Klein won Canadian Salad with 40 points."
     ],
     "games": [
       {
@@ -578,27 +667,32 @@
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Jake"
+            "sourceName": "Clark",
+            "position": 1
           },
           {
             "playerId": "p05",
             "playerName": "Jon Hicks",
-            "sourceName": "Jake"
+            "sourceName": "Jon",
+            "position": 2
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Jake"
+            "sourceName": "Mitch",
+            "position": 3
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Jake"
+            "sourceName": "Jeremy",
+            "position": 4
           },
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "Jake"
+            "sourceName": "John",
+            "position": 5
           },
           {
             "playerId": "p01",
@@ -615,29 +709,39 @@
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Mitch"
+            "sourceName": "Jake",
+            "points": 95,
+            "position": 1
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Mitch"
+            "sourceName": "Clark",
+            "points": 107,
+            "position": 4
           },
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "Mitch",
+            "sourceName": "John",
+            "points": 95,
+            "position": 2,
             "moonShots": 2
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Mitch",
+            "sourceName": "Jeremy",
+            "points": 111,
+            "position": 5,
             "moonShots": 1
           },
           {
             "playerId": "p05",
             "playerName": "Jon Hicks",
-            "sourceName": "Mitch"
+            "sourceName": "Jon",
+            "points": 100,
+            "position": 3
           },
           {
             "playerId": "p04",
@@ -656,27 +760,37 @@
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "John"
+            "sourceName": "Jake",
+            "points": 220,
+            "position": 5
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "John"
+            "sourceName": "Clark",
+            "points": 160,
+            "position": 4
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "John"
+            "sourceName": "Jeremy",
+            "points": 40,
+            "position": 1
           },
           {
             "playerId": "p05",
             "playerName": "Jon Hicks",
-            "sourceName": "John"
+            "sourceName": "Jon",
+            "points": 70,
+            "position": 2
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "John"
+            "sourceName": "Mitch",
+            "points": 350,
+            "position": 6
           },
           {
             "playerId": "p06",
@@ -696,11 +810,11 @@
     "location": "Jeremy's East Renton Highlands Shop",
     "host": "",
     "photo": "",
-    "recap": "Canadian Salad: Mitch Stuard won Canadian Salad with 0 points. Poker: John Sargent won Poker. Hearts: Jon Hicks won Hearts with 64 points.",
+    "recap": "Canadian Salad: Mitch Stuard won Canadian Salad with 0 points. Poker: Jake Klein won Poker. Hearts: Mitch Stuard won Hearts with 60 points.",
     "highlights": [
       "Mitch Stuard won Canadian Salad with 0 points.",
-      "John Sargent won Poker.",
-      "Jon Hicks won Hearts with 64 points."
+      "Jake Klein won Poker.",
+      "Mitch Stuard won Hearts with 60 points."
     ],
     "games": [
       {
@@ -710,32 +824,44 @@
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Mitch"
+            "sourceName": "Jake",
+            "points": 50,
+            "position": 3
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Mitch"
+            "sourceName": "Clark",
+            "points": 40,
+            "position": 2
           },
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "Mitch"
+            "sourceName": "John",
+            "points": 190,
+            "position": 6
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Mitch"
+            "sourceName": "Jeremy",
+            "points": 80,
+            "position": 4
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "Mitch"
+            "sourceName": "Brandon",
+            "points": 510,
+            "position": 7
           },
           {
             "playerId": "p05",
             "playerName": "Jon Hicks",
-            "sourceName": "Mitch"
+            "sourceName": "Jon",
+            "points": 120,
+            "position": 5
           },
           {
             "playerId": "p04",
@@ -753,32 +879,38 @@
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "John"
+            "sourceName": "Jake",
+            "position": 1
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "John"
+            "sourceName": "Clark",
+            "position": 2
           },
           {
             "playerId": "p05",
             "playerName": "Jon Hicks",
-            "sourceName": "John"
+            "sourceName": "Jon",
+            "position": 3
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "John"
+            "sourceName": "Jeremy",
+            "position": 4
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "John"
+            "sourceName": "Brandon",
+            "position": 5
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "John"
+            "sourceName": "Mitch",
+            "position": 5
           },
           {
             "playerId": "p06",
@@ -795,35 +927,47 @@
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Jon",
+            "sourceName": "Mitch",
+            "points": 60,
+            "position": 1,
             "moonShots": 2
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Jon"
+            "sourceName": "Jake",
+            "points": 78,
+            "position": 5
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Jon"
+            "sourceName": "Clark",
+            "points": 72,
+            "position": 3
           },
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "Jon",
+            "sourceName": "John",
+            "points": 76,
+            "position": 4,
             "moonShots": 2
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Jon",
+            "sourceName": "Jeremy",
+            "points": 90,
+            "position": 6,
             "moonShots": 1
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "Jon"
+            "sourceName": "Brandon",
+            "points": 112,
+            "position": 7
           },
           {
             "playerId": "p05",
@@ -843,10 +987,10 @@
     "location": "Jake's Renton Highlands Office",
     "host": "",
     "photo": "",
-    "recap": "Canadian Salad: Mitch Stuard won Canadian Salad with 0 points. Poker: Jeremy Klein won Poker.",
+    "recap": "Canadian Salad: Jake Klein won Canadian Salad with 0 points. Poker: Jake Klein won Poker.",
     "highlights": [
-      "Mitch Stuard won Canadian Salad with 0 points.",
-      "Jeremy Klein won Poker."
+      "Jake Klein won Canadian Salad with 0 points.",
+      "Jake Klein won Poker."
     ],
     "games": [
       {
@@ -856,32 +1000,44 @@
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Mitch"
+            "sourceName": "Jake",
+            "points": 0,
+            "position": 1
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Mitch"
+            "sourceName": "Clark",
+            "points": 220,
+            "position": 5
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "Mitch"
+            "sourceName": "Brandon",
+            "points": 350,
+            "position": 7
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Mitch"
+            "sourceName": "Jeremy",
+            "points": 225,
+            "position": 6
           },
           {
             "playerId": "p05",
             "playerName": "Jon Hicks",
-            "sourceName": "Mitch"
+            "sourceName": "Jon",
+            "points": 95,
+            "position": 4
           },
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "Mitch"
+            "sourceName": "John",
+            "points": 90,
+            "position": 3
           },
           {
             "playerId": "p04",
@@ -899,32 +1055,38 @@
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Jeremy"
+            "sourceName": "Jake",
+            "position": 1
           },
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "Jeremy"
+            "sourceName": "John",
+            "position": 2
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "Jeremy"
+            "sourceName": "Brandon",
+            "position": 3
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Jeremy"
+            "sourceName": "Clark",
+            "position": 4
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Jeremy"
+            "sourceName": "Mitch",
+            "position": 5
           },
           {
             "playerId": "p05",
             "playerName": "Jon Hicks",
-            "sourceName": "Jeremy"
+            "sourceName": "Jon",
+            "position": 6
           },
           {
             "playerId": "p02",
@@ -955,17 +1117,26 @@
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Mitch"
+            "sourceName": "Jeremy",
+            "gamesWon": 10,
+            "seriesWon": 4,
+            "position": 2
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Mitch"
+            "sourceName": "Jake",
+            "gamesWon": 9,
+            "seriesWon": 3,
+            "position": 3
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Mitch"
+            "sourceName": "Clark",
+            "gamesWon": 6,
+            "seriesWon": 2,
+            "position": 4
           },
           {
             "playerId": "p04",
@@ -986,11 +1157,11 @@
     "location": "Jake's Renton Highlands Office",
     "host": "",
     "photo": "",
-    "recap": "Canadian Salad: John Sargent won Canadian Salad with 35 points. Hearts: John Sargent won Hearts with 98 points. Poker: Aaron Grefsrud won Poker.",
+    "recap": "Canadian Salad: Brandon Ford won Canadian Salad with 30 points. Hearts: Mitch Stuard won Hearts with 35 points. Poker: John Sargent won Poker.",
     "highlights": [
-      "John Sargent won Canadian Salad with 35 points.",
-      "John Sargent won Hearts with 98 points.",
-      "Aaron Grefsrud won Poker."
+      "Brandon Ford won Canadian Salad with 30 points.",
+      "Mitch Stuard won Hearts with 35 points.",
+      "John Sargent won Poker."
     ],
     "games": [
       {
@@ -1000,32 +1171,44 @@
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "John"
+            "sourceName": "Jeremy",
+            "points": 180,
+            "position": 5
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "John"
+            "sourceName": "Jake",
+            "points": 335,
+            "position": 6
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "John"
+            "sourceName": "Brandon",
+            "points": 30,
+            "position": 1
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "John"
+            "sourceName": "Clark",
+            "points": 300,
+            "position": 6
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "John"
+            "sourceName": "Mitch",
+            "points": 120,
+            "position": 4
           },
           {
             "playerId": "p07",
             "playerName": "Aaron Grefsrud",
-            "sourceName": "John"
+            "sourceName": "Aaron",
+            "points": 45,
+            "position": 3
           },
           {
             "playerId": "p06",
@@ -1043,34 +1226,46 @@
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "John",
+            "sourceName": "Jeremy",
+            "points": 63,
+            "position": 4,
             "moonShots": 1
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "John"
+            "sourceName": "Jake",
+            "points": 41,
+            "position": 3
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "John"
+            "sourceName": "Brandon",
+            "points": 64,
+            "position": 5
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "John"
+            "sourceName": "Clark",
+            "points": 113,
+            "position": 7
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "John",
+            "sourceName": "Mitch",
+            "points": 35,
+            "position": 1,
             "moonShots": 2
           },
           {
             "playerId": "p07",
             "playerName": "Aaron Grefsrud",
-            "sourceName": "John"
+            "sourceName": "Aaron",
+            "points": 56,
+            "position": 2
           },
           {
             "playerId": "p06",
@@ -1089,32 +1284,38 @@
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "Aaron"
+            "sourceName": "John",
+            "position": 1
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Aaron"
+            "sourceName": "Jake",
+            "position": 2
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Aaron"
+            "sourceName": "Jeremy",
+            "position": 3
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Aaron"
+            "sourceName": "Clark",
+            "position": 4
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "Aaron"
+            "sourceName": "Brandon",
+            "position": 5
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Aaron"
+            "sourceName": "Mitch",
+            "position": 6
           },
           {
             "playerId": "p07",
@@ -1133,9 +1334,9 @@
     "location": "Jake's Renton Highlands Office",
     "host": "",
     "photo": "",
-    "recap": "Sequence: Clark Close won Sequence with 4 games and 1 series.",
+    "recap": "Sequence: Mitch Stuard won Sequence with 10 games and 5 series.",
     "highlights": [
-      "Clark Close won Sequence with 4 games and 1 series."
+      "Mitch Stuard won Sequence with 10 games and 5 series."
     ],
     "games": [
       {
@@ -1145,17 +1346,26 @@
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Clark"
+            "sourceName": "Mitch",
+            "gamesWon": 10,
+            "seriesWon": 5,
+            "position": 1
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Clark"
+            "sourceName": "Jake",
+            "gamesWon": 10,
+            "seriesWon": 3,
+            "position": 2
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Clark"
+            "sourceName": "Jeremy",
+            "gamesWon": 6,
+            "seriesWon": 3,
+            "position": 3
           },
           {
             "playerId": "p03",
@@ -1176,10 +1386,10 @@
     "location": "Jake's Renton Highlands Office",
     "host": "",
     "photo": "",
-    "recap": "Poker: Aaron Grefsrud won Poker. Sequence: Jake Klein won Sequence with 4 games and 1 series.",
+    "recap": "Poker: Jeremy Klein won Poker. Sequence: Jeremy Klein won Sequence with 6 games and 3 series.",
     "highlights": [
-      "Aaron Grefsrud won Poker.",
-      "Jake Klein won Sequence with 4 games and 1 series."
+      "Jeremy Klein won Poker.",
+      "Jeremy Klein won Sequence with 6 games and 3 series."
     ],
     "games": [
       {
@@ -1189,42 +1399,50 @@
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Aaron"
+            "sourceName": "Jeremy",
+            "position": 1
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Aaron"
+            "sourceName": "Clark",
+            "position": 2
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Aaron"
+            "sourceName": "Mitch",
+            "position": 9
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Aaron"
+            "sourceName": "Jake",
+            "position": 9
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "Aaron"
+            "sourceName": "Brandon",
+            "position": 9
           },
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "Aaron"
+            "sourceName": "John",
+            "position": 9
           },
           {
             "playerId": "p05",
             "playerName": "Jon Hicks",
-            "sourceName": "Aaron"
+            "sourceName": "Jon",
+            "position": 9
           },
           {
             "playerId": "p09",
             "playerName": "Ben Feely",
-            "sourceName": "Aaron"
+            "sourceName": "Ben",
+            "position": 9
           },
           {
             "playerId": "p07",
@@ -1241,17 +1459,26 @@
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Jake"
+            "sourceName": "Jeremy",
+            "gamesWon": 6,
+            "seriesWon": 3,
+            "position": 1
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Jake"
+            "sourceName": "Clark",
+            "gamesWon": 4,
+            "seriesWon": 1,
+            "position": 2
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Jake"
+            "sourceName": "Mitch",
+            "gamesWon": 4,
+            "seriesWon": 1,
+            "position": 2
           },
           {
             "playerId": "p01",
@@ -1272,10 +1499,10 @@
     "location": "Jake's Renton Highlands Office",
     "host": "",
     "photo": "",
-    "recap": "Poker: John Sargent won Poker. Hearts: John Sargent won Hearts with 103 points.",
+    "recap": "Poker: Clark Close won Poker. Hearts: Mike Chan won Hearts with 56 points.",
     "highlights": [
-      "John Sargent won Poker.",
-      "John Sargent won Hearts with 103 points."
+      "Clark Close won Poker.",
+      "Mike Chan won Hearts with 56 points."
     ],
     "games": [
       {
@@ -1285,27 +1512,32 @@
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "John"
+            "sourceName": "Clark",
+            "position": 1
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "John"
+            "sourceName": "Jake",
+            "position": 2
           },
           {
             "playerId": "p11",
             "playerName": "Mike Chan",
-            "sourceName": "John"
+            "sourceName": "Mike Chan",
+            "position": 3
           },
           {
             "playerId": "p05",
             "playerName": "Jon Hicks",
-            "sourceName": "John"
+            "sourceName": "Jon",
+            "position": 4
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "John"
+            "sourceName": "Mitch",
+            "position": 5
           },
           {
             "playerId": "p06",
@@ -1322,27 +1554,37 @@
           {
             "playerId": "p11",
             "playerName": "Mike Chan",
-            "sourceName": "John"
+            "sourceName": "Mike Chan",
+            "points": 56,
+            "position": 1
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "John"
+            "sourceName": "Clark",
+            "points": 63,
+            "position": 2
           },
           {
             "playerId": "p05",
             "playerName": "Jon Hicks",
-            "sourceName": "John"
+            "sourceName": "Jon",
+            "points": 66,
+            "position": 3
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "John"
+            "sourceName": "Jake",
+            "points": 87,
+            "position": 4
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "John",
+            "sourceName": "Mitch",
+            "points": 91,
+            "position": 5,
             "moonShots": 2
           },
           {
@@ -1364,11 +1606,11 @@
     "location": "Jake's Renton Highlands Office",
     "host": "",
     "photo": "",
-    "recap": "Hearts: Brandon Ford won Hearts with 30 points. Poker: Aaron Grefsrud won Poker. Canadian Salad: Mitch Stuard won Canadian Salad with 245 points.",
+    "recap": "Hearts: Ben Feely won Hearts with 5 points. Poker: Jake Klein won Poker. Canadian Salad: Aaron Grefsrud won Canadian Salad with 40 points.",
     "highlights": [
-      "Brandon Ford won Hearts with 30 points.",
-      "Aaron Grefsrud won Poker.",
-      "Mitch Stuard won Canadian Salad with 245 points."
+      "Ben Feely won Hearts with 5 points.",
+      "Jake Klein won Poker.",
+      "Aaron Grefsrud won Canadian Salad with 40 points."
     ],
     "games": [
       {
@@ -1378,34 +1620,46 @@
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Brandon",
+            "sourceName": "Mitch",
+            "points": 40,
+            "position": 5,
             "moonShots": 2
           },
           {
             "playerId": "p07",
             "playerName": "Aaron Grefsrud",
-            "sourceName": "Brandon"
+            "sourceName": "Aaron",
+            "points": 19,
+            "position": 2
           },
           {
             "playerId": "p09",
             "playerName": "Ben Feely",
-            "sourceName": "Brandon"
+            "sourceName": "Ben",
+            "points": 5,
+            "position": 1
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Brandon",
+            "sourceName": "Jeremy",
+            "points": 109,
+            "position": 7,
             "moonShots": 1
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Brandon"
+            "sourceName": "Jake",
+            "points": 19,
+            "position": 2
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Brandon"
+            "sourceName": "Clark",
+            "points": 70,
+            "position": 6
           },
           {
             "playerId": "p10",
@@ -1423,32 +1677,38 @@
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Aaron"
+            "sourceName": "Jake",
+            "position": 1
           },
           {
             "playerId": "p09",
             "playerName": "Ben Feely",
-            "sourceName": "Aaron"
+            "sourceName": "Ben",
+            "position": 2
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Aaron"
+            "sourceName": "Mitch",
+            "position": 3
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "Aaron"
+            "sourceName": "Brandon",
+            "position": 4
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Aaron"
+            "sourceName": "Clark",
+            "position": 5
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Aaron"
+            "sourceName": "Jeremy",
+            "position": 6
           },
           {
             "playerId": "p07",
@@ -1465,32 +1725,44 @@
           {
             "playerId": "p07",
             "playerName": "Aaron Grefsrud",
-            "sourceName": "Mitch"
+            "sourceName": "Aaron",
+            "points": 40,
+            "position": 1
           },
           {
             "playerId": "p09",
             "playerName": "Ben Feely",
-            "sourceName": "Mitch"
+            "sourceName": "Ben",
+            "points": 210,
+            "position": 6
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Mitch"
+            "sourceName": "Jeremy",
+            "points": 145,
+            "position": 4
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Mitch"
+            "sourceName": "Jake",
+            "points": 175,
+            "position": 5
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Mitch"
+            "sourceName": "Clark",
+            "points": 75,
+            "position": 2
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "Mitch"
+            "sourceName": "Brandon",
+            "points": 85,
+            "position": 3
           },
           {
             "playerId": "p04",
@@ -1522,17 +1794,26 @@
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Jake"
+            "sourceName": "Jeremy",
+            "gamesWon": 7,
+            "seriesWon": 2,
+            "position": 4
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Jake"
+            "sourceName": "Clark",
+            "gamesWon": 9,
+            "seriesWon": 4,
+            "position": 2
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Jake"
+            "sourceName": "Mitch",
+            "gamesWon": 8,
+            "seriesWon": 2,
+            "position": 3
           },
           {
             "playerId": "p01",
@@ -1553,9 +1834,9 @@
     "location": "Jake's East Renton Highlands House",
     "host": "",
     "photo": "",
-    "recap": "Sequence: Clark Close won Sequence with 5 games and 2 series.",
+    "recap": "Sequence: Jake Klein won Sequence with 7 games and 3 series.",
     "highlights": [
-      "Clark Close won Sequence with 5 games and 2 series."
+      "Jake Klein won Sequence with 7 games and 3 series."
     ],
     "games": [
       {
@@ -1565,17 +1846,26 @@
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Clark"
+            "sourceName": "Jake",
+            "gamesWon": 7,
+            "seriesWon": 3,
+            "position": 1
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Clark"
+            "sourceName": "Jeremy",
+            "gamesWon": 6,
+            "seriesWon": 3,
+            "position": 2
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Clark"
+            "sourceName": "Mitch",
+            "gamesWon": 4,
+            "seriesWon": 2,
+            "position": 4
           },
           {
             "playerId": "p03",
@@ -1608,17 +1898,17 @@
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Jake"
+            "sourceName": "Jeremy"
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Jake"
+            "sourceName": "Clark"
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Jake"
+            "sourceName": "Mitch"
           },
           {
             "playerId": "p01",
@@ -1636,9 +1926,9 @@
     "location": "Jake's house in Renton Highlands",
     "host": "",
     "photo": "",
-    "recap": "Poker: Mitch Stuard won Poker.",
+    "recap": "Poker: Jake Klein won Poker.",
     "highlights": [
-      "Mitch Stuard won Poker."
+      "Jake Klein won Poker."
     ],
     "games": [
       {
@@ -1648,27 +1938,32 @@
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Mitch"
+            "sourceName": "Jake",
+            "position": 1
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Mitch"
+            "sourceName": "Clark",
+            "position": 2
           },
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "Mitch"
+            "sourceName": "John",
+            "position": 3
           },
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Mitch"
+            "sourceName": "Jeremy",
+            "position": 4
           },
           {
             "playerId": "p07",
             "playerName": "Aaron Grefsrud",
-            "sourceName": "Mitch"
+            "sourceName": "Aaron",
+            "position": 4
           },
           {
             "playerId": "p04",

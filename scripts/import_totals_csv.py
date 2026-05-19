@@ -463,13 +463,21 @@ def main() -> int:
                 game["notes"] = clean(row[4])
 
             if not game["results"]:
+                entries: list[tuple[str, str]] = []
+                for player_name in player_names:
+                    if re.fullmatch(r"\d+", player_name):
+                        continue
+                    player_id = resolve_player_id(player_name, player_lookup)
+                    if player_id:
+                        entries.append((player_id, player_name))
+
                 game["results"] = [
                     {
                         "playerId": player_id,
                         "playerName": next((player["name"] for player in players if player["id"] == player_id), player_id),
-                        "sourceName": player_name,
+                        "sourceName": source_name,
                     }
-                    for player_id in player_ids
+                    for player_id, source_name in entries
                 ]
             continue
 
