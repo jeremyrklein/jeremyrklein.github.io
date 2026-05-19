@@ -300,7 +300,7 @@ function App() {
             <div>
               <h1>Game Night Hall of Fame</h1>
               <p className="muted">
-                Poker, Hearts, Canadian Salad, Oh Heck, darts, ping pong, and every
+                Poker, Hearts, Canadian Salad, Sequence, and every
                 disputed tiebreaker.
               </p>
             </div>
