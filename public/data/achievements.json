@@ -1,26 +1,116 @@
 [
   {
     "id": "a001",
-    "name": "River King",
-    "holder": "p07",
-    "dateAwarded": "2025-01-11",
-    "tier": "gold",
-    "reason": "Pulled off the wildest river comeback in winter session."
+    "name": "Most losses",
+    "holder": "p03",
+    "holders": [
+      "p03"
+    ],
+    "dateAwarded": "2026-05-02",
+    "reason": "Most losses with 31 across all tracked games."
   },
   {
     "id": "a002",
-    "name": "Moonshot",
-    "holder": "p14",
-    "dateAwarded": "2025-02-22",
-    "tier": "silver",
-    "reason": "Shot the moon in Hearts under pressure."
+    "name": "Most moon shots",
+    "holder": "p04",
+    "holders": [
+      "p04",
+      "p06"
+    ],
+    "dateAwarded": "2026-05-02",
+    "reason": "Tied at 2 Hearts moon shots."
+  },
+  {
+    "id": "a003",
+    "name": "Best average finish",
+    "holder": "p01",
+    "holders": [
+      "p01"
+    ],
+    "dateAwarded": "2026-05-02",
+    "reason": "Best average finish at 3.11 across qualified players (minimum 5 events)."
+  },
+  {
+    "id": "a004",
+    "name": "Most Hearts wins",
+    "holder": "p01",
+    "holders": [
+      "p01",
+      "p03",
+      "p04"
+    ],
+    "dateAwarded": "2026-05-02",
+    "reason": "Tied atop the Hearts win column with 2 wins."
   },
   {
     "id": "a005",
-    "name": "Clutch Commander",
-    "holder": "p15",
-    "dateAwarded": "2025-05-17",
-    "tier": "gold",
-    "reason": "Back-to-back Hearts wins with comeback rounds."
+    "name": "Most Poker wins",
+    "holder": "p01",
+    "holders": [
+      "p01"
+    ],
+    "dateAwarded": "2026-05-02",
+    "reason": "Leads the Poker win column with 5 wins."
+  },
+  {
+    "id": "a006",
+    "name": "Longest Hearts streak",
+    "holder": "p04",
+    "holders": [
+      "p04"
+    ],
+    "dateAwarded": "2023-02-04",
+    "reason": "Longest Hearts streak at 2 straight sessions."
+  },
+  {
+    "id": "a007",
+    "name": "Longest Poker streak",
+    "holder": "p01",
+    "holders": [
+      "p01"
+    ],
+    "dateAwarded": "2026-05-02",
+    "reason": "Longest Poker streak at 2 straight sessions."
+  },
+  {
+    "id": "a008",
+    "name": "Longest Sequence event streak",
+    "holder": "p01",
+    "holders": [
+      "p01",
+      "p04"
+    ],
+    "dateAwarded": "2025-05-31",
+    "reason": "Tied for the longest Sequence event streak at 2 straight sessions."
+  },
+  {
+    "id": "a009",
+    "name": "Most Sequence games",
+    "holder": "p01",
+    "holders": [
+      "p01"
+    ],
+    "dateAwarded": "2026-05-02",
+    "reason": "Most Sequence games with 63 game wins."
+  },
+  {
+    "id": "a010",
+    "name": "Most Sequence series",
+    "holder": "p02",
+    "holders": [
+      "p02"
+    ],
+    "dateAwarded": "2026-05-02",
+    "reason": "Most Sequence series with 24 series wins."
+  },
+  {
+    "id": "a011",
+    "name": "Most Sequence events",
+    "holder": "p01",
+    "holders": [
+      "p01"
+    ],
+    "dateAwarded": "2026-05-02",
+    "reason": "Most Sequence events with 3 event wins and 32 games as the tiebreaker."
   }
 ]

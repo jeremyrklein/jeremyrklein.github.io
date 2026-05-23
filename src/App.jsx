@@ -35,16 +35,6 @@ function cx(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-function tierClass(tier) {
-  if (tier === 'gold') {
-    return 'tier-gold'
-  }
-  if (tier === 'silver') {
-    return 'tier-silver'
-  }
-  return 'tier-bronze'
-}
-
 function iconForGameType(gameType) {
   const byType = {
     poker: Trophy,
@@ -737,34 +727,52 @@ function App() {
 
         {!selectedGameView && activeTab === 'Achievements' && (
           <motion.section initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}>
-            <h2 className="section-title">Achievements and virtual trophies</h2>
+            <h2 className="section-title">Achievements</h2>
             <p className="muted">
-              One-off moments, recurring records, seasonal titles, and legendary honors.
+              Data-backed records only.
             </p>
 
-            <div className="achievement-grid">
-              {[...data.achievements]
-                .sort((a, b) => b.dateAwarded.localeCompare(a.dateAwarded))
-                .map((achievement) => (
-                  <article key={achievement.id} className="glass-card achievement-card">
-                    <div className="row between">
-                      <div className={cx('tier-icon', tierClass(achievement.tier))}>
-                        <Trophy size={18} />
-                      </div>
-                      <span className="tag tiny">{achievement.tier.toUpperCase()}</span>
-                    </div>
+            {data.achievements.length === 0 ? (
+              <article className="glass-card achievement-card">
+                <h3>No achievements recorded yet</h3>
+                <p className="muted small">No placeholder trophies are being shown.</p>
+              </article>
+            ) : (
+              <div className="achievement-grid">
+                {[...data.achievements]
+                  .sort((a, b) => b.dateAwarded.localeCompare(a.dateAwarded))
+                  .map((achievement) => {
+                    const holders = (Array.isArray(achievement.holders) && achievement.holders.length > 0
+                      ? achievement.holders
+                      : [achievement.holder]
+                    ).map((holderId) => computed.playersById[holderId]?.name || holderId)
 
-                    <h3>{achievement.name}</h3>
-                    <p className="muted small">
-                      Holder:{' '}
-                      <strong>
-                        {computed.playersById[achievement.holder]?.name || achievement.holder}
-                      </strong>
-                    </p>
-                    <p className="muted small">{achievement.reason}</p>
-                  </article>
-                ))}
-            </div>
+                    return (
+                      <article key={achievement.id} className="glass-card achievement-card">
+                        <div className="row between">
+                          <div className="achievement-icon">
+                            <Trophy size={18} />
+                          </div>
+                          <span className="muted tiny">{achievement.dateAwarded}</span>
+                        </div>
+
+                        <h3>{achievement.name}</h3>
+                        <div className="holder-list-wrap">
+                          <p className="muted small">{holders.length > 1 ? 'Holders' : 'Holder'}</p>
+                          <div className="holder-list">
+                            {holders.map((holderName) => (
+                              <span key={`${achievement.id}-${holderName}`} className="holder-pill">
+                                {holderName}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                        <p className="muted small">{achievement.reason}</p>
+                      </article>
+                    )
+                  })}
+              </div>
+            )}
           </motion.section>
         )}
 

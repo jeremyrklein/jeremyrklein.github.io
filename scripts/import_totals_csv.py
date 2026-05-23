@@ -316,6 +316,207 @@ def build_games_from_events(events: list[dict]) -> list[dict]:
     return games
 
 
+def build_achievements(
+    players: list[dict],
+    events: list[dict],
+    games: list[dict],
+    advanced_stats: dict[str, dict],
+    moon_shots: dict[str, int],
+    places_by_player: dict[str, dict[str, list[int]]],
+) -> list[dict]:
+    achievements: list[dict] = []
+
+    def add_achievement(name: str, holders: list[str], date_awarded: str, reason: str) -> None:
+        normalized_holders = sorted({holder for holder in holders if holder})
+        if not normalized_holders or not date_awarded:
+            return
+        achievements.append(
+            {
+                "id": f"a{len(achievements) + 1:03d}",
+                "name": name,
+                "holder": normalized_holders[0],
+                "holders": normalized_holders,
+                "dateAwarded": date_awarded,
+                "reason": reason,
+            }
+        )
+
+    latest_event_date = max((str(event.get("date", "")) for event in events), default="")
+    event_dates_by_id = {str(event.get("id", "")): str(event.get("date", "")) for event in events}
+
+    losses_by_player: dict[str, int] = defaultdict(int)
+    wins_by_type: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
+    games_by_type: dict[str, list[dict]] = defaultdict(list)
+
+    ordered_games = sorted(games, key=lambda game: (event_dates_by_id.get(str(game.get("eventId", "")), ""), str(game.get("id", ""))))
+
+    for game in ordered_games:
+        winner = str(game.get("winner", ""))
+        game_type = str(game.get("gameType", ""))
+        if winner and game_type:
+            wins_by_type[game_type][winner] += 1
+            games_by_type[game_type].append(game)
+
+        for player_id in map(str, game.get("players", [])):
+            if player_id and player_id != winner:
+                losses_by_player[player_id] += 1
+
+    if losses_by_player:
+        max_losses = max(losses_by_player.values())
+        holders = sorted(player_id for player_id, total in losses_by_player.items() if total == max_losses)
+        add_achievement(
+            "Most losses",
+            holders,
+            latest_event_date,
+            f"{'Tied at' if len(holders) > 1 else 'Most losses with'} {max_losses} across all tracked games.",
+        )
+
+    if moon_shots:
+        max_moon_shots = max(moon_shots.values())
+        holders = sorted(player_id for player_id, total in moon_shots.items() if total == max_moon_shots and total > 0)
+        if holders:
+            add_achievement(
+                "Most moon shots",
+                holders,
+                latest_event_date,
+                f"{'Tied at' if len(holders) > 1 else 'Most Hearts moon shots with'} {max_moon_shots} Hearts moon shots.",
+            )
+
+    qualified_average_finish: dict[str, float] = {}
+    for player_id in advanced_stats.keys():
+        all_places = [place for values in places_by_player[player_id].values() for place in values]
+        if all_places:
+            qualified_average_finish[player_id] = sum(all_places) / len(all_places)
+
+    if qualified_average_finish:
+        best_average = min(qualified_average_finish.values())
+        holders = sorted(
+            player_id
+            for player_id, average in qualified_average_finish.items()
+            if abs(average - best_average) < 1e-9
+        )
+        add_achievement(
+            "Best average finish",
+            holders,
+            latest_event_date,
+            f"{'Tied for best average finish at' if len(holders) > 1 else 'Best average finish at'} {best_average:.2f} across qualified players (minimum 5 events).",
+        )
+
+    for game_type, wins in sorted(wins_by_type.items()):
+        if game_type == "sequence" or not wins:
+            continue
+
+        max_wins = max(wins.values())
+        holders = sorted(player_id for player_id, total in wins.items() if total == max_wins)
+        if max_wins <= 1 and len(holders) > 1:
+            continue
+        game_name = GAME_NAMES.get(game_type, game_type)
+        add_achievement(
+            f"Most {game_name} wins",
+            holders,
+            latest_event_date,
+            f"{'Tied atop the' if len(holders) > 1 else 'Leads the'} {game_name} win column with {max_wins} wins.",
+        )
+
+    streaks_by_type: dict[str, dict[str, tuple[int, str]]] = defaultdict(dict)
+    for game_type, game_list in games_by_type.items():
+        current_winner = ""
+        current_streak = 0
+        for game in game_list:
+            winner = str(game.get("winner", ""))
+            if not winner:
+                current_winner = ""
+                current_streak = 0
+                continue
+            if winner == current_winner:
+                current_streak += 1
+            else:
+                current_winner = winner
+                current_streak = 1
+            end_date = event_dates_by_id.get(str(game.get("eventId", "")), latest_event_date)
+            previous = streaks_by_type[game_type].get(winner)
+            if previous is None or current_streak > previous[0] or (current_streak == previous[0] and end_date > previous[1]):
+                streaks_by_type[game_type][winner] = (current_streak, end_date)
+
+    for game_type, streak_map in sorted(streaks_by_type.items()):
+        if not streak_map:
+            continue
+        best_streak = max(length for length, _ in streak_map.values())
+        if best_streak < 2:
+            continue
+        holders = sorted(player_id for player_id, (length, _) in streak_map.items() if length == best_streak)
+        game_name = "Sequence event" if game_type == "sequence" else GAME_NAMES.get(game_type, game_type)
+        add_achievement(
+            f"Longest {game_name} streak",
+            holders,
+            max(streak_map[player_id][1] for player_id in holders),
+            f"{'Tied for the longest' if len(holders) > 1 else 'Longest'} {game_name} streak at {best_streak} straight sessions.",
+        )
+
+    sequence_games: dict[str, int] = defaultdict(int)
+    sequence_series: dict[str, int] = defaultdict(int)
+    sequence_events: dict[str, tuple[int, int]] = defaultdict(lambda: (0, 0))
+    latest_sequence_date = latest_event_date
+    for event in events:
+        event_date = str(event.get("date", ""))
+        for event_game in event.get("games", []):
+            if str(event_game.get("gameId", "")) != "sequence":
+                continue
+            latest_sequence_date = max(latest_sequence_date, event_date)
+            best_series = -1
+            best_games = -1
+            best_player = ""
+            for result in event_game.get("results", []):
+                player_id = str(result.get("playerId", ""))
+                games_won = int(result.get("gamesWon", 0) or 0)
+                series_won = int(result.get("seriesWon", 0) or 0)
+                if player_id:
+                    sequence_games[player_id] += games_won
+                    sequence_series[player_id] += series_won
+                    current_events, current_games = sequence_events[player_id]
+                    sequence_events[player_id] = (current_events, current_games)
+                if series_won > best_series or (series_won == best_series and games_won > best_games):
+                    best_series = series_won
+                    best_games = games_won
+                    best_player = player_id
+            if best_player:
+                current_events, current_games = sequence_events[best_player]
+                sequence_events[best_player] = (current_events + 1, current_games + best_games)
+
+    if sequence_games:
+        max_games = max(sequence_games.values())
+        holders = sorted(player_id for player_id, total in sequence_games.items() if total == max_games)
+        add_achievement(
+            "Most Sequence games",
+            holders,
+            latest_sequence_date,
+            f"{'Tied for most Sequence games with' if len(holders) > 1 else 'Most Sequence games with'} {max_games} game wins.",
+        )
+
+    if sequence_series:
+        max_series = max(sequence_series.values())
+        holders = sorted(player_id for player_id, total in sequence_series.items() if total == max_series)
+        add_achievement(
+            "Most Sequence series",
+            holders,
+            latest_sequence_date,
+            f"{'Tied for most Sequence series with' if len(holders) > 1 else 'Most Sequence series with'} {max_series} series wins.",
+        )
+
+    if sequence_events:
+        sorted_events = sorted(sequence_events.items(), key=lambda item: (-item[1][0], -item[1][1], item[0]))
+        best_events, best_games = sorted_events[0][1]
+        holders = sorted(player_id for player_id, totals in sequence_events.items() if totals == (best_events, best_games))
+        add_achievement(
+            "Most Sequence events",
+            holders,
+            latest_sequence_date,
+            f"{'Tied for most Sequence events with' if len(holders) > 1 else 'Most Sequence events with'} {best_events} event wins and {best_games} games as the tiebreaker.",
+        )
+
+    return achievements
+
+
 def count_moon_shots(rows: list[list[str]], player_lookup: dict[str, str]) -> dict[str, int]:
     grouped: dict[str, dict[str, list[list[str]]]] = defaultdict(lambda: defaultdict(list))
     for row in rows:
@@ -364,6 +565,7 @@ def main() -> int:
     players_paths = [ROOT / "public" / "data" / "players.json", ROOT / "data" / "players.json"]
     events_paths = [ROOT / "public" / "data" / "events.json", ROOT / "data" / "events.json"]
     games_paths = [ROOT / "public" / "data" / "games.json", ROOT / "data" / "games.json"]
+    achievements_paths = [ROOT / "public" / "data" / "achievements.json", ROOT / "data" / "achievements.json"]
     stats_paths = [ROOT / "public" / "data" / "advanced_stats.json", ROOT / "data" / "advanced_stats.json"]
 
     players = [dict(player) for player in BASE_PLAYERS]
@@ -631,6 +833,14 @@ def main() -> int:
 
     players = sorted(players, key=lambda player: player["id"])
     advanced_stats = dict(sorted(advanced_stats.items(), key=lambda item: (-item[1]["events_played"], item[0])))
+    achievements = build_achievements(
+        players,
+        events,
+        games,
+        advanced_stats,
+        moon_shots,
+        places_by_player,
+    )
 
     for path in players_paths:
         write_json(path, players)
@@ -638,6 +848,8 @@ def main() -> int:
         write_json(path, events)
     for path in games_paths:
         write_json(path, games)
+    for path in achievements_paths:
+        write_json(path, achievements)
     for path in stats_paths:
         write_json(path, advanced_stats)
 
