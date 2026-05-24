@@ -62,7 +62,8 @@
     "specialty": "Breaking chairs.",
     "joinedYear": 2018,
     "avatar": "./photos/players/john.png",
-    "active": true
+    "active": true,
+    "card": "./assets/cards/john-card.png"
   },
   {
     "id": "p07",
