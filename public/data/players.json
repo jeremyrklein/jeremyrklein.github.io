@@ -7,7 +7,8 @@
     "specialty": "Making dirty jokes and turning every word into an innuendo.",
     "joinedYear": 2018,
     "avatar": "./photos/players/jake.png",
-    "active": true
+    "active": true,
+    "card": "./assets/cards/jake-card.png"
   },
   {
     "id": "p02",
@@ -17,7 +18,8 @@
     "specialty": "Rolling eyes at stupid dirty jokes.",
     "joinedYear": 2018,
     "avatar": "./photos/players/jeremy.png",
-    "active": true
+    "active": true,
+    "card": "./assets/cards/jeremy-card.png"
   },
   {
     "id": "p03",
@@ -27,7 +29,8 @@
     "specialty": "Having a poker face for every game.",
     "joinedYear": 2018,
     "avatar": "./photos/players/clark.png",
-    "active": true
+    "active": true,
+    "card": "./assets/cards/clark-card.png"
   },
   {
     "id": "p04",
@@ -37,7 +40,8 @@
     "specialty": "Writing on paper.",
     "joinedYear": 2018,
     "avatar": "./photos/players/mitch.png",
-    "active": true
+    "active": true,
+    "card": "./assets/cards/mitch-card.png"
   },
   {
     "id": "p05",
