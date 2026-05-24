@@ -649,7 +649,7 @@ function renderDashboard() {
           <div class="hero-season">Season 2026</div>
           <p class="hero-chip">${ICON.flame} Current champion: ${escapeHtml(computed.heroChampion)}</p>
           <h2>A living archive for every game night.</h2>
-          <p>Track event dates, winners, player dossiers, trophies, highlights, and private stats behind a simple shared-password gate.</p>
+          <p>Track event dates, winners, player dossiers, trophies, and highlights from every game night.</p>
           <div class="hero-actions">
             <button type="button" data-action="tab" data-tab="Events">Browse events</button>
             <button type="button" class="secondary-btn" data-action="tab" data-tab="Players">View dossiers</button>
