@@ -819,12 +819,20 @@ function renderPlayers() {
       <article class="glass-card dossier-card">
         <div class="dossier-hero">
           <div class="dossier-left">
-            ${selected.avatar
-              ? `<img class="avatar-large" src="${escapeHtml(selected.avatar)}" alt="" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'avatar-large',textContent:'${escapeHtml(selected.name.slice(0,1))}'}))" />`
-              : `<div class="avatar-large">${escapeHtml(selected.name.slice(0, 1))}</div>`}
-            <p class="muted tiny">Joined ${escapeHtml(String(computed.firstYearByPlayer[selected.id] || selected.joinedYear || ''))}</p>
-            <h3>${escapeHtml(selected.name)}</h3>
-            <p class="accent">${escapeHtml(selected.nickname || '')}</p>
+            ${selected.card
+              ? `<figure class="player-card">
+                   <img class="player-card-img" src="${escapeHtml(selected.card)}" alt="${escapeHtml(selected.name)} player card" />
+                   <figcaption class="player-card-caption">
+                     <span class="muted tiny">Joined ${escapeHtml(String(computed.firstYearByPlayer[selected.id] || selected.joinedYear || ''))}</span>
+                     ${selected.nickname ? `<span class="accent">${escapeHtml(selected.nickname)}</span>` : ''}
+                   </figcaption>
+                 </figure>`
+              : `${selected.avatar
+                  ? `<img class="avatar-large" src="${escapeHtml(selected.avatar)}" alt="" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'avatar-large',textContent:'${escapeHtml(selected.name.slice(0,1))}'}))" />`
+                  : `<div class="avatar-large">${escapeHtml(selected.name.slice(0, 1))}</div>`}
+                 <p class="muted tiny">Joined ${escapeHtml(String(computed.firstYearByPlayer[selected.id] || selected.joinedYear || ''))}</p>
+                 <h3>${escapeHtml(selected.name)}</h3>
+                 <p class="accent">${escapeHtml(selected.nickname || '')}</p>`}
           </div>
           <div class="dossier-right">
             <div class="row between wrap-gap">

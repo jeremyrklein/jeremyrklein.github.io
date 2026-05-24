@@ -47,7 +47,8 @@
     "specialty": "Volleyball, clearly not cards.",
     "joinedYear": 2018,
     "avatar": "./photos/players/jon.png",
-    "active": true
+    "active": true,
+    "card": "./assets/cards/jon-card.png"
   },
   {
     "id": "p06",
