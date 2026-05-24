@@ -186,15 +186,16 @@ function pickWinner(results, gameType) {
       : Number(b.points) - Number(a.points))[0];
     if (top?.playerId) return top.playerId;
   }
-  returnr[k] === undefined || r[k] === null || r[k] === '') continue;
+  return results[0]?.playerId || '';
+}
+
+function scoreFromResult(r) {
+  for (const k of ['points', 'winnings', 'gamesWon', 'seriesWon']) {
+    if (r[k] === undefined || r[k] === null || r[k] === '') continue;
     const n = Number(r[k]);
     if (Number.isFinite(n)) return n;
   }
-  return nullcoreFromResult(r) {
-  for (const k of ['points', 'winnings', 'gamesWon', 'seriesWon']) {
-    if (Number.isFinite(Number(r[k]))) return Number(r[k]);
-  }
-  return 0;
+  return null;
 }
 
 /* ---------- stats ---------- */
