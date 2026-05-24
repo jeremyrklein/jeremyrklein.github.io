@@ -56,6 +56,7 @@ const ICON = {
   heart: '<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg>',
   poker: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg>',
   sequence: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8" cy="8" r="1.5" fill="currentColor"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/><circle cx="16" cy="16" r="1.5" fill="currentColor"/><circle cx="16" cy="8" r="1.5" fill="currentColor"/></svg>',
+  ohHeck: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="16" rx="3"/><text x="12" y="15.6" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="8.5" font-weight="800" fill="currentColor" stroke="none">OH!</text></svg>',
 };
 
 function iconForAchievement(name) {
@@ -63,6 +64,7 @@ function iconForAchievement(name) {
   if (n.includes('hearts') || n.includes('moon')) return ICON.heart;
   if (n.includes('poker')) return ICON.poker;
   if (n.includes('sequence')) return ICON.sequence;
+  if (n.includes('oh heck')) return ICON.ohHeck;
   return ICON.trophy;
 }
 
@@ -71,6 +73,7 @@ function gameTypeForAchievement(name) {
   if (n.includes('hearts') || n.includes('moon')) return 'hearts';
   if (n.includes('poker')) return 'poker';
   if (n.includes('sequence')) return 'sequence';
+  if (n.includes('oh heck')) return 'oh-heck';
   return null;
 }
 
@@ -115,7 +118,7 @@ function buildPlayerAliasMap(players) {
 }
 
 async function loadJson(name) {
-  const r = await fetch(`./data/${name}.json`, { cache: 'no-cache' });
+  const r = await fetch(`./data/${name}.json`, { cache: 'reload' });
   if (!r.ok) throw new Error(`Failed to load ${name}.json (${r.status})`);
   return r.json();
 }
@@ -729,6 +732,29 @@ function renderInsights() {
 
   const filterLabel = filter === 'all' ? 'All games' : (computed.gameTypesById[filter]?.name || filter);
 
+  // Average finish per player (from event results' positions). Respects filter and 3-game minimum.
+  const placesByPlayer = {};
+  data.events.forEach((ev) => {
+    (ev.games || []).forEach((eg) => {
+      if (filter !== 'all' && eg.gameId !== filter) return;
+      (eg.results || []).forEach((r) => {
+        const pid = r.playerId;
+        const pos = r.position;
+        if (!pid || typeof pos !== 'number') return;
+        (placesByPlayer[pid] = placesByPlayer[pid] || []).push(pos);
+      });
+    });
+  });
+  const avgFinishRows = Object.entries(placesByPlayer)
+    .filter(([, places]) => places.length >= 3)
+    .map(([pid, places]) => ({
+      pid,
+      name: computed.playersById[pid]?.name || pid,
+      avg: places.reduce((a, b) => a + b, 0) / places.length,
+      n: places.length,
+    }))
+    .sort((a, b) => a.avg - b.avg);
+
   return `
     <section>
       <div class="row between wrap-gap">
@@ -762,6 +788,34 @@ function renderInsights() {
           <article class="glass-card insights-wide">
             <h3>Games played by type</h3>
             ${renderBarChart(typeCounts.map((r) => ({ label: r.type.name, value: r.count })))}
+          </article>
+        ` : ''}
+
+        ${avgFinishRows.length ? `
+          <article class="glass-card insights-wide">
+            <h3>Average finish <span class="muted small">(${escapeHtml(filterLabel)}, minimum 3 games) — lower is better</span></h3>
+            <div class="table-wrap">
+              <table class="stats-table">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Player</th>
+                    <th class="num">Avg finish</th>
+                    <th class="num">Games</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${avgFinishRows.map((r, i) => `
+                    <tr>
+                      <td class="num">${i + 1}</td>
+                      <td>${escapeHtml(r.name)}</td>
+                      <td class="num">${r.avg.toFixed(2)}</td>
+                      <td class="num">${r.n}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
           </article>
         ` : ''}
 
@@ -855,41 +909,34 @@ function renderGameDeepStats(gameTypeId, filteredGames, sortedGames) {
     </div>
   `;
 
-  // Score-over-time line chart for top players (by appearances), only if scores exist.
-  let scoreTrend = '';
-  if (hasScores) {
-    const topPlayers = statRows.slice(0, 5).map((r) => r.pid);
-    const dates = [...new Set(sortedGames.map((g) => g.date))];
-    const series = topPlayers.map((pid, i) => {
-      const points = [];
-      sortedGames.forEach((g) => {
-        const s = g.scores?.[pid];
-        if (typeof s === 'number' && (g.players || []).includes(pid)) {
-          points.push({ date: g.date, value: s });
-        }
+  // Place-per-event line chart for top players (by appearances). Always shown if positions exist.
+  let placeTrend = '';
+  {
+    const topPlayers = statRows.map((r) => r.pid);
+    const dateByEvent = Object.fromEntries(state.data.events.map((e) => [e.id, e.date]));
+    // Collect (date, position) per player for this gameType from event results.
+    const pointsByPlayer = Object.fromEntries(topPlayers.map((pid) => [pid, []]));
+    state.data.events.forEach((ev) => {
+      (ev.games || []).forEach((eg) => {
+        if (eg.gameId !== gameTypeId) return;
+        (eg.results || []).forEach((r) => {
+          if (!topPlayers.includes(r.playerId)) return;
+          if (typeof r.position !== 'number') return;
+          pointsByPlayer[r.playerId].push({ date: ev.date, value: r.position });
+        });
       });
-      return {
-        label: computed.playersById[pid]?.name || pid,
-        color: SERIES_COLORS[i % SERIES_COLORS.length],
-        points,
-      };
-    }).filter((s) => s.points.length > 0);
+    });
+    const series = topPlayers.map((pid, i) => ({
+      label: computed.playersById[pid]?.name || pid,
+      color: SERIES_COLORS[i % SERIES_COLORS.length],
+      points: pointsByPlayer[pid].sort((a, b) => String(a.date).localeCompare(String(b.date))),
+    })).filter((s) => s.points.length > 0);
 
     if (series.length) {
-      // Use distinct dates across this series as x-axis. But our renderLineChart expects evenly-spaced indexes,
-      // so flatten to a per-series ordered list of (date,value). We'll instead build a per-game x-axis using indexes.
-      const allDates = [...new Set(series.flatMap((s) => s.points.map((p) => p.date)))].sort();
-      const normalized = series.map((s) => ({
-        ...s,
-        points: allDates.map((d) => {
-          const hit = s.points.find((p) => p.date === d);
-          return { date: d, value: hit ? hit.value : null };
-        }),
-      })).map((s) => ({ ...s, points: s.points.filter((p) => p.value != null) }));
-      scoreTrend = `
+      placeTrend = `
         <article class="glass-card insights-wide">
-          <h3>${escapeHtml(typeName)} score over time <span class="muted small">(${lowerBetter ? 'lower is better' : 'higher is better'}; top ${normalized.length} by appearances)</span></h3>
-          ${renderLineChartDates(normalized)}
+          <h3>${escapeHtml(typeName)} finish per event <span class="muted small">(lower is better; ${series.length} player${series.length === 1 ? '' : 's'}, click a name to isolate)</span></h3>
+          ${renderLineChartDates(series, { invertY: true, integerTicks: true })}
         </article>
       `;
     }
@@ -924,15 +971,16 @@ function renderGameDeepStats(gameTypeId, filteredGames, sortedGames) {
       <h3>${escapeHtml(typeName)} — per-player stats</h3>
       ${table}
     </article>
-    ${scoreTrend}
+    ${placeTrend}
     ${extremes}
   `;
 }
 
 /* Line chart variant that uses real dates for x-spacing.
    Each series: { label, color, points: [{date, value}] } with possibly different dates. */
-function renderLineChartDates(series) {
-  const W = 640, H = 260, PAD_L = 36, PAD_R = 12, PAD_T = 12, PAD_B = 28;
+function renderLineChartDates(series, opts = {}) {
+  const { invertY = false, integerTicks = false } = opts;
+  const W = 640, H = 300, PAD_L = 36, PAD_R = 12, PAD_T = 12, PAD_B = 64;
   const innerW = W - PAD_L - PAD_R;
   const innerH = H - PAD_T - PAD_B;
   const allDates = [...new Set(series.flatMap((s) => s.points.map((p) => p.date)))].sort();
@@ -941,49 +989,67 @@ function renderLineChartDates(series) {
   const t1 = new Date(allDates[allDates.length - 1]).getTime();
   const span = Math.max(1, t1 - t0);
   const allVals = series.flatMap((s) => s.points.map((p) => p.value));
-  const minY = Math.min(0, ...allVals);
-  const maxY = Math.max(1, ...allVals);
+  const minY = invertY ? Math.min(1, ...allVals) : Math.min(0, ...allVals);
+  const maxY = Math.max(invertY ? 1 : 1, ...allVals);
   const x = (d) => PAD_L + ((new Date(d).getTime() - t0) / span) * innerW;
-  const y = (v) => PAD_T + innerH - ((v - minY) / (maxY - minY || 1)) * innerH;
+  const y = (v) => invertY
+    ? PAD_T + ((v - minY) / (maxY - minY || 1)) * innerH
+    : PAD_T + innerH - ((v - minY) / (maxY - minY || 1)) * innerH;
 
   const ticks = [];
-  const step = Math.max(1, Math.ceil((maxY - minY) / 5));
-  for (let v = minY; v <= maxY; v += step) ticks.push(v);
-  if (ticks[ticks.length - 1] !== maxY) ticks.push(maxY);
+  if (integerTicks) {
+    for (let v = Math.ceil(minY); v <= Math.floor(maxY); v += 1) ticks.push(v);
+  } else {
+    const step = Math.max(1, Math.ceil((maxY - minY) / 5));
+    for (let v = minY; v <= maxY; v += step) ticks.push(v);
+    if (ticks[ticks.length - 1] !== maxY) ticks.push(maxY);
+  }
   const grid = ticks.map((t) => `
     <line x1="${PAD_L}" x2="${W - PAD_R}" y1="${y(t)}" y2="${y(t)}" stroke="#e2e8f0" stroke-width="1" />
     <text x="${PAD_L - 6}" y="${y(t) + 4}" text-anchor="end" font-size="10" fill="#94a3b8">${t}</text>
   `).join('');
 
-  const lines = series.map((s) => {
-    const sorted = [...s.points].sort((a, b) => a.date.localeCompare(b.date));
-    const d = sorted.map((p, i) => `${i === 0 ? 'M' : 'L'} ${x(p.date)} ${y(p.value)}`).join(' ');
-    const dots = sorted.map((p) => `<circle cx="${x(p.date)}" cy="${y(p.value)}" r="3" fill="${s.color}" />`).join('');
-    return `<path d="${d}" fill="none" stroke="${s.color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />${dots}`;
-  }).join('');
-
-  const xLabels = [allDates[0], allDates[Math.floor((allDates.length - 1) / 2)], allDates[allDates.length - 1]];
-  const xTicks = [...new Set(xLabels)].map((d) => `
-    <text x="${x(d)}" y="${H - 8}" text-anchor="middle" font-size="10" fill="#94a3b8">${escapeHtml(d)}</text>
+  // Collect all unique x positions across all series so we can place a date label per point on the axis.
+  const xPositions = [...new Set(series.flatMap((s) => s.points.map((p) => p.date)))]
+    .sort()
+    .map((d) => ({ date: d, x: x(d) }));
+  // Bump PAD_B for rotated date labels.
+  const labelY = H - PAD_B + 14;
+  const dateLabels = xPositions.map(({ date, x: cx }) => `
+    <text x="${cx}" y="${labelY}" text-anchor="end" font-size="9" fill="#64748b"
+          transform="rotate(-45 ${cx} ${labelY})">${escapeHtml(date.slice(5))}</text>
   `).join('');
 
-  const legend = series.map((s) => `
-    <span class="chart-legend-item"><span class="chart-legend-swatch" style="background:${s.color}"></span>${escapeHtml(s.label)}</span>
+  const lines = series.map((s, idx) => {
+    const sid = `s${idx}`;
+    const sorted = [...s.points].sort((a, b) => a.date.localeCompare(b.date));
+    const d = sorted.map((p, i) => `${i === 0 ? 'M' : 'L'} ${x(p.date)} ${y(p.value)}`).join(' ');
+    const dots = sorted.map((p) => `<circle cx="${x(p.date)}" cy="${y(p.value)}" r="3.5" fill="${s.color}"><title>${escapeHtml(s.label)} · ${escapeHtml(p.date)} · ${p.value}</title></circle>`).join('');
+    return `<g class="chart-series" data-series-id="${sid}">
+      <path d="${d}" fill="none" stroke="${s.color}" stroke-width="2.25" stroke-linejoin="round" stroke-linecap="round" />
+      ${dots}
+    </g>`;
+  }).join('');
+
+  const legend = series.map((s, idx) => `
+    <button type="button" class="chart-legend-item" data-action="chart-select-series" data-series-id="s${idx}">
+      <span class="chart-legend-swatch" style="background:${s.color}"></span>${escapeHtml(s.label)}
+    </button>
   `).join('');
 
   return `
-    <div class="chart-line-wrap">
-      <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Score over time">
+    <div class="chart-line-wrap" data-chart-wrap>
+      <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Series over time">
         ${grid}
         ${lines}
-        ${xTicks}
+        ${dateLabels}
       </svg>
       <div class="chart-legend">${legend}</div>
     </div>
   `;
 }
 
-const SERIES_COLORS = ['#0f172a', '#dc2626', '#2563eb', '#16a34a', '#d97706', '#7c3aed'];
+const SERIES_COLORS = ['#0f172a', '#dc2626', '#2563eb', '#16a34a', '#d97706', '#7c3aed', '#0891b2', '#db2777', '#65a30d', '#ea580c', '#4338ca', '#0d9488'];
 
 function renderBarChart(rows) {
   if (!rows.length) return '<p class="muted small">No data.</p>';
@@ -1187,6 +1253,26 @@ function onClick(e) {
     }
     case 'retry': {
       bootstrap(true); break;
+    }
+    case 'chart-select-series': {
+      const wrap = target.closest('[data-chart-wrap]');
+      if (!wrap) break;
+      const sid = target.dataset.seriesId;
+      const current = wrap.getAttribute('data-selected-series');
+      const clearActive = () => {
+        wrap.querySelectorAll('.chart-series').forEach((el) => el.classList.remove('is-active'));
+        wrap.querySelectorAll('.chart-legend-item').forEach((el) => el.classList.remove('is-selected'));
+      };
+      if (current === sid) {
+        wrap.removeAttribute('data-selected-series');
+        clearActive();
+      } else {
+        wrap.setAttribute('data-selected-series', sid);
+        clearActive();
+        wrap.querySelector(`.chart-series[data-series-id="${sid}"]`)?.classList.add('is-active');
+        target.classList.add('is-selected');
+      }
+      break;
     }
   }
 }

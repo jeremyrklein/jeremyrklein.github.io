@@ -18,6 +18,7 @@ GAME_MAP = {
     "hearts": "hearts",
     "sequence": "sequence",
     "canadian salad": "canadian-salad",
+    "oh heck": "oh-heck",
 }
 GAME_NAMES = {
     "blackjack": "Blackjack",
@@ -25,6 +26,7 @@ GAME_NAMES = {
     "hearts": "Hearts",
     "sequence": "Sequence",
     "canadian-salad": "Canadian Salad",
+    "oh-heck": "Oh Heck",
 }
 BASE_PLAYERS = [
     {
@@ -296,8 +298,7 @@ def build_games_from_events(events: list[dict]) -> list[dict]:
                     scores[player_id] = result["gamesWon"]
                 elif result.get("seriesWon") is not None:
                     scores[player_id] = result["seriesWon"]
-                else:
-                    scores[player_id] = 0
+                # else: leave the player out of scores — they participated but no score was recorded.
 
             winner_id = str(event_game.get("winnerId", "")).strip()
             winner = winner_from_results(results, event_game["gameId"])
@@ -345,6 +346,7 @@ def build_achievements(
     event_dates_by_id = {str(event.get("id", "")): str(event.get("date", "")) for event in events}
 
     losses_by_player: dict[str, int] = defaultdict(int)
+    last_place_by_player: dict[str, int] = defaultdict(int)
     wins_by_type: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
     games_by_type: dict[str, list[dict]] = defaultdict(list)
 
@@ -361,14 +363,25 @@ def build_achievements(
             if player_id and player_id != winner:
                 losses_by_player[player_id] += 1
 
-    if losses_by_player:
-        max_losses = max(losses_by_player.values())
-        holders = sorted(player_id for player_id, total in losses_by_player.items() if total == max_losses)
+    # Last-place finishes: derived from event-level results (which include positions).
+    for event in events:
+        for event_game in event.get("games", []):
+            results = [r for r in event_game.get("results", []) if isinstance(r.get("position"), int) and r.get("playerId")]
+            if len(results) < 2:
+                continue
+            max_pos = max(r["position"] for r in results)
+            for r in results:
+                if r["position"] == max_pos:
+                    last_place_by_player[str(r["playerId"])] += 1
+
+    if last_place_by_player:
+        max_last = max(last_place_by_player.values())
+        holders = sorted(player_id for player_id, total in last_place_by_player.items() if total == max_last)
         add_achievement(
-            "Most losses",
+            "Most last-place finishes",
             holders,
             latest_event_date,
-            f"{'Tied at' if len(holders) > 1 else 'Most losses with'} {max_losses} across all tracked games.",
+            f"{'Tied at' if len(holders) > 1 else 'Most last-place finishes with'} {max_last} last-place finishes across all tracked games.",
         )
 
     if moon_shots:
@@ -400,6 +413,51 @@ def build_achievements(
             holders,
             latest_event_date,
             f"{'Tied for best average finish at' if len(holders) > 1 else 'Best average finish at'} {best_average:.2f} across qualified players (minimum 5 events).",
+        )
+
+        worst_average = max(qualified_average_finish.values())
+        if abs(worst_average - best_average) > 1e-9:
+            holders = sorted(
+                player_id
+                for player_id, average in qualified_average_finish.items()
+                if abs(average - worst_average) < 1e-9
+            )
+            add_achievement(
+                "Worst average finish",
+                holders,
+                latest_event_date,
+                f"{'Tied for worst average finish at' if len(holders) > 1 else 'Worst average finish at'} {worst_average:.2f} across qualified players (minimum 5 events).",
+            )
+
+    # Per-game-type best/worst average finish (min 3 games of that type, qualified players only).
+    per_game_averages: dict[str, dict[str, float]] = defaultdict(dict)
+    for player_id in advanced_stats.keys():
+        for game_id, places in places_by_player[player_id].items():
+            if len(places) >= 3:
+                per_game_averages[game_id][player_id] = sum(places) / len(places)
+
+    for game_id in sorted(per_game_averages.keys()):
+        averages = per_game_averages[game_id]
+        if len(averages) < 2:
+            continue
+        game_name = GAME_NAMES.get(game_id, game_id)
+        best = min(averages.values())
+        best_holders = sorted(pid for pid, avg in averages.items() if abs(avg - best) < 1e-9)
+        add_achievement(
+            f"Best average {game_name} finish",
+            best_holders,
+            latest_event_date,
+            f"{'Tied for best average' if len(best_holders) > 1 else 'Best average'} {game_name} finish at {best:.2f} (minimum 3 {game_name} games).",
+        )
+        worst = max(averages.values())
+        if abs(worst - best) < 1e-9:
+            continue
+        worst_holders = sorted(pid for pid, avg in averages.items() if abs(avg - worst) < 1e-9)
+        add_achievement(
+            f"Worst average {game_name} finish",
+            worst_holders,
+            latest_event_date,
+            f"{'Tied for worst average' if len(worst_holders) > 1 else 'Worst average'} {game_name} finish at {worst:.2f} (minimum 3 {game_name} games).",
         )
 
     for game_type, wins in sorted(wins_by_type.items()):
@@ -570,12 +628,46 @@ def main() -> int:
 
     players = [dict(player) for player in BASE_PLAYERS]
 
+    # Preserve user-edited fields (avatar, specialty, bio, nickname, joinedYear) from existing players.json.
+    existing_players_path = ROOT / "data" / "players.json"
+    if existing_players_path.exists():
+        try:
+            existing_players = json.loads(existing_players_path.read_text(encoding="utf-8"))
+            existing_by_id = {p.get("id"): p for p in existing_players if p.get("id")}
+            for player in players:
+                prev = existing_by_id.get(player.get("id"))
+                if not prev:
+                    continue
+                for field in ("avatar", "specialty", "bio", "nickname"):
+                    if prev.get(field):
+                        player[field] = prev[field]
+        except (OSError, json.JSONDecodeError):
+            pass
+
     with csv_path.open("r", encoding="utf-8-sig", newline="") as file:
         rows = list(csv.reader(file))
 
     discovered_names: list[str] = []
     first_seen_year: dict[str, int] = {}
     valid_rows: list[list[str]] = []
+
+    KNOWN_KINDS = {"Player", "Round", "Place", "Games", "Series", "Total", "Target hit"}
+    NON_PLAYER_LABELS = {"target", "score", "target hit", "place", "total", "games", "series", "round", "player"}
+
+    def normalize_player_header(row: list[str]) -> None:
+        """Some newer CSV rows omit the literal 'Player' label in col 7. If col 7 is
+        empty and col 8+ contains non-numeric names (and no label keywords),
+        treat it as a Player header."""
+        if clean(row[7]):
+            return
+        non_empty = [clean(v) for v in row[8:] if clean(v)]
+        if not non_empty:
+            return
+        if any(re.fullmatch(r"-?\d+(?:\.\d+)?", v) for v in non_empty):
+            return
+        if any(v.lower() in NON_PLAYER_LABELS for v in non_empty):
+            return
+        row[7] = "Player"
 
     for row in rows[1:]:
         if len(row) < 9:
@@ -586,6 +678,7 @@ def main() -> int:
         if not is_date(date_text) or not game_id:
             continue
 
+        normalize_player_header(row)
         valid_rows.append(row)
 
         kind = clean(row[7])
@@ -636,6 +729,14 @@ def main() -> int:
             }
         )
         existing_names.add(key(player_name))
+
+    # Backfill joinedYear from first CSV appearance for existing BASE_PLAYERS too.
+    for player in players:
+        name_candidates = [player.get("name", ""), player.get("nickname", "")]
+        for cand in name_candidates:
+            if cand and cand in first_seen_year:
+                player["joinedYear"] = first_seen_year[cand]
+                break
 
     player_lookup = build_player_lookup(players)
 

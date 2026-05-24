@@ -703,6 +703,29 @@ img.avatar-large {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+  transition: background 0.15s, border-color 0.15s, opacity 0.15s;
+}
+.chart-legend-item:hover {
+  background: rgba(15, 23, 42, 0.05);
+}
+.chart-legend-item.is-selected {
+  background: rgba(15, 23, 42, 0.08);
+  border-color: rgba(15, 23, 42, 0.25);
+}
+
+.chart-line-wrap[data-selected-series] .chart-series {
+  opacity: 0.12;
+  transition: opacity 0.15s;
+}
+.chart-line-wrap[data-selected-series] .chart-series.is-active {
+  opacity: 1;
 }
 
 .chart-legend-swatch {

@@ -28,5 +28,11 @@
     "name": "Blackjack",
     "rules": "Standard blackjack with house rules.",
     "scoring": "Net chips or wins by round."
+  },
+  {
+    "id": "oh-heck",
+    "name": "Oh Heck",
+    "rules": "Trick-taking bidding game. Each round, players bid the exact number of tricks they will take.",
+    "scoring": "Score 10 + tricks for hitting your bid exactly; otherwise 0. Highest total wins."
   }
 ]

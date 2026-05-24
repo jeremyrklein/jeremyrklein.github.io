@@ -13,15 +13,7 @@
       "p05"
     ],
     "winner": "p01",
-    "scores": {
-      "p01": 0,
-      "p04": 0,
-      "p02": 0,
-      "p10": 0,
-      "p03": 0,
-      "p06": 0,
-      "p05": 0
-    },
+    "scores": {},
     "notes": "Jake wins $35, Mitch wins $5 No details on places after first and second. Everyone else tied for last."
   },
   {
@@ -38,15 +30,7 @@
       "p05"
     ],
     "winner": "p10",
-    "scores": {
-      "p10": 0,
-      "p03": 0,
-      "p02": 0,
-      "p01": 0,
-      "p04": 0,
-      "p06": 0,
-      "p05": 0
-    },
+    "scores": {},
     "notes": "Brandon wins $35, Clark wins $5 No details on places after first and second. Everyone else tied for last."
   },
   {
@@ -63,15 +47,7 @@
       "p05"
     ],
     "winner": "p03",
-    "scores": {
-      "p03": 0,
-      "p04": 0,
-      "p02": 0,
-      "p01": 0,
-      "p10": 0,
-      "p06": 0,
-      "p05": 0
-    },
+    "scores": {},
     "notes": "Clark wins $10, Mitch wins $2 No details on places after first and second. Everyone else tied for last."
   },
   {
@@ -87,14 +63,7 @@
       "p04"
     ],
     "winner": "p06",
-    "scores": {
-      "p06": 0,
-      "p03": 0,
-      "p02": 0,
-      "p01": 0,
-      "p10": 0,
-      "p04": 0
-    },
+    "scores": {},
     "notes": ""
   },
   {
@@ -133,14 +102,7 @@
       "p01"
     ],
     "winner": "p04",
-    "scores": {
-      "p04": 0,
-      "p02": 0,
-      "p10": 0,
-      "p06": 0,
-      "p03": 0,
-      "p01": 0
-    },
+    "scores": {},
     "notes": ""
   },
   {
@@ -157,15 +119,7 @@
       "p06"
     ],
     "winner": "p10",
-    "scores": {
-      "p10": 0,
-      "p01": 0,
-      "p05": 0,
-      "p03": 0,
-      "p04": 0,
-      "p02": 0,
-      "p06": 0
-    },
+    "scores": {},
     "notes": ""
   },
   {
@@ -229,14 +183,7 @@
       "p06"
     ],
     "winner": "p01",
-    "scores": {
-      "p01": 0,
-      "p03": 0,
-      "p02": 0,
-      "p10": 0,
-      "p04": 0,
-      "p06": 0
-    },
+    "scores": {},
     "notes": ""
   },
   {
@@ -290,14 +237,7 @@
       "p01"
     ],
     "winner": "p03",
-    "scores": {
-      "p03": 0,
-      "p05": 0,
-      "p04": 0,
-      "p02": 0,
-      "p06": 0,
-      "p01": 0
-    },
+    "scores": {},
     "notes": ""
   },
   {
@@ -321,7 +261,7 @@
       "p05": 100,
       "p04": 116
     },
-    "notes": "Jake and John tie break with 1 card draw. Jake wins."
+    "notes": "Double moonshot at the end to quickly end the game in a tie. Jake and John tie break with 1 card draw. Jake wins."
   },
   {
     "id": "e2021-10-16-canadian-salad-3",
@@ -385,15 +325,7 @@
       "p06"
     ],
     "winner": "p01",
-    "scores": {
-      "p01": 0,
-      "p03": 0,
-      "p05": 0,
-      "p02": 0,
-      "p10": 0,
-      "p04": 0,
-      "p06": 0
-    },
+    "scores": {},
     "notes": "John out first, Mitch and Brandon out on same hand (supposedly Clark hid his chips when going all in) , Jeremy out, Jon out, Jake knocks out Clark for the win"
   },
   {
@@ -460,15 +392,7 @@
       "p02"
     ],
     "winner": "p01",
-    "scores": {
-      "p01": 0,
-      "p06": 0,
-      "p10": 0,
-      "p03": 0,
-      "p04": 0,
-      "p05": 0,
-      "p02": 0
-    },
+    "scores": {},
     "notes": "Jeremy out first, Hicks out next, Mitch goes out and agrees to be all time dealer. Clark knocked out by Jake but really went down hill due to music change (You're the best around). John knocks out Brandon. Big blind is 32. Jake knocks out John and wins $70."
   },
   {
@@ -533,10 +457,10 @@
       "p02": 63,
       "p01": 41,
       "p10": 64,
-      "p03": 113,
-      "p04": 35,
+      "p03": 101,
+      "p04": 33,
       "p07": 56,
-      "p06": 98
+      "p06": 84
     },
     "notes": "Mitch wins $60, John stays at 98 for 4 hands"
   },
@@ -554,15 +478,7 @@
       "p07"
     ],
     "winner": "p06",
-    "scores": {
-      "p06": 0,
-      "p01": 0,
-      "p02": 0,
-      "p03": 0,
-      "p10": 0,
-      "p04": 0,
-      "p07": 0
-    },
+    "scores": {},
     "notes": "Aaron out first, then Mitch, then, Brandon (all time dealer), Clark is knocked out by Jake, Jeremy out, Jake out, John wins $60 on the river"
   },
   {
@@ -600,17 +516,7 @@
       "p07"
     ],
     "winner": "p02",
-    "scores": {
-      "p02": 0,
-      "p03": 0,
-      "p04": 0,
-      "p01": 0,
-      "p10": 0,
-      "p06": 0,
-      "p05": 0,
-      "p09": 0,
-      "p07": 0
-    },
+    "scores": {},
     "notes": "Details only on top 2 winners. Everyone else last place"
   },
   {
@@ -645,14 +551,7 @@
       "p06"
     ],
     "winner": "p03",
-    "scores": {
-      "p03": 0,
-      "p01": 0,
-      "p11": 0,
-      "p05": 0,
-      "p04": 0,
-      "p06": 0
-    },
+    "scores": {},
     "notes": "Jake was winning the entire game handily. Clark and Mitch both went all in on the last hand and Clark won with ace high over jack high. All that combined total chips barely surpased Jake. Mitch had tears, Clark had tears, Jake was pissed."
   },
   {
@@ -699,7 +598,7 @@
       "p02": 109,
       "p01": 19,
       "p03": 70,
-      "p10": 30
+      "p10": 50
     },
     "notes": ""
   },
@@ -713,19 +612,10 @@
       "p04",
       "p10",
       "p03",
-      "p02",
-      "p07"
+      "p02"
     ],
     "winner": "p01",
-    "scores": {
-      "p01": 0,
-      "p09": 0,
-      "p04": 0,
-      "p10": 0,
-      "p03": 0,
-      "p02": 0,
-      "p07": 0
-    },
+    "scores": {},
     "notes": "Aaron out first then bought back in, Jeremy out, Clark and Aaron out, Brandon wins three all in hands in a row. Brandon loses to Jake 4th. Mitch 3rd, Ben 2nd, Jake wins!"
   },
   {
@@ -792,6 +682,71 @@
     "notes": "One round we almost filled the entire board with tokens"
   },
   {
+    "id": "e2025-11-09-hearts-1",
+    "eventId": "e2025-11-09",
+    "gameType": "hearts",
+    "players": [
+      "p04",
+      "p07",
+      "p03",
+      "p06",
+      "p02",
+      "p05",
+      "p01"
+    ],
+    "winner": "p06",
+    "scores": {
+      "p04": 84,
+      "p07": 101,
+      "p03": 73,
+      "p06": 33,
+      "p02": 63,
+      "p05": 45,
+      "p01": 62
+    },
+    "notes": ""
+  },
+  {
+    "id": "e2025-11-09-canadian-salad-2",
+    "eventId": "e2025-11-09",
+    "gameType": "canadian-salad",
+    "players": [
+      "p07",
+      "p03",
+      "p02",
+      "p05",
+      "p01",
+      "p04"
+    ],
+    "winner": "p05",
+    "scores": {
+      "p07": 175,
+      "p03": 185,
+      "p02": 115,
+      "p05": 10,
+      "p01": 500,
+      "p04": 35
+    },
+    "notes": ""
+  },
+  {
+    "id": "e2025-11-09-poker-3",
+    "eventId": "e2025-11-09",
+    "gameType": "poker",
+    "players": [
+      "p04",
+      "p05",
+      "p02",
+      "p07",
+      "p01",
+      "p03",
+      "p06"
+    ],
+    "winner": "p04",
+    "scores": {},
+    "notes": ""
+  },
+  {
     "id": "e2025-11-22-sequence-1",
     "eventId": "e2025-11-22",
     "gameType": "sequence",
@@ -802,12 +757,7 @@
       "p01"
     ],
     "winner": "p02",
-    "scores": {
-      "p02": 0,
-      "p03": 0,
-      "p04": 0,
-      "p01": 0
-    },
+    "scores": {},
     "notes": "No results found from this game night"
   },
   {
@@ -823,14 +773,64 @@
       "p04"
     ],
     "winner": "p01",
-    "scores": {
-      "p01": 0,
-      "p03": 0,
-      "p06": 0,
-      "p02": 0,
-      "p07": 0,
-      "p04": 0
-    },
+    "scores": {},
     "notes": "Jake wins last three hands after losing the whole game and wins"
+  },
+  {
+    "id": "e2026-05-02-sequence-2",
+    "eventId": "e2026-05-02",
+    "gameType": "sequence",
+    "players": [
+      "p01",
+      "p02",
+      "p03",
+      "p04"
+    ],
+    "winner": "p03",
+    "scores": {
+      "p01": 3,
+      "p02": 2,
+      "p03": 4,
+      "p04": 3
+    },
+    "notes": ""
+  },
+  {
+    "id": "e2026-05-16-oh-heck-1",
+    "eventId": "e2026-05-16",
+    "gameType": "oh-heck",
+    "players": [
+      "p01",
+      "p02",
+      "p03",
+      "p04"
+    ],
+    "winner": "p01",
+    "scores": {
+      "p01": 157,
+      "p02": 111,
+      "p03": 114,
+      "p04": 89
+    },
+    "notes": "This is the first time we've played this at Game Night"
+  },
+  {
+    "id": "e2026-05-16-sequence-2",
+    "eventId": "e2026-05-16",
+    "gameType": "sequence",
+    "players": [
+      "p04",
+      "p03",
+      "p02",
+      "p01"
+    ],
+    "winner": "p01",
+    "scores": {
+      "p04": 3,
+      "p03": 2,
+      "p02": 3,
+      "p01": 6
+    },
+    "notes": ""
   }
 ]

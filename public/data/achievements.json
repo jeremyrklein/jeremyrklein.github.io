@@ -1,24 +1,23 @@
 [
   {
     "id": "a001",
-    "name": "Most losses",
-    "holder": "p03",
+    "name": "Most last-place finishes",
+    "holder": "p06",
     "holders": [
-      "p03"
+      "p06"
     ],
-    "dateAwarded": "2026-05-02",
-    "reason": "Most losses with 31 across all tracked games."
+    "dateAwarded": "2026-05-16",
+    "reason": "Most last-place finishes with 12 last-place finishes across all tracked games."
   },
   {
     "id": "a002",
     "name": "Most moon shots",
-    "holder": "p04",
+    "holder": "p06",
     "holders": [
-      "p04",
       "p06"
     ],
-    "dateAwarded": "2026-05-02",
-    "reason": "Tied at 2 Hearts moon shots."
+    "dateAwarded": "2026-05-16",
+    "reason": "Most Hearts moon shots with 3 Hearts moon shots."
   },
   {
     "id": "a003",
@@ -27,11 +26,101 @@
     "holders": [
       "p01"
     ],
-    "dateAwarded": "2026-05-02",
-    "reason": "Best average finish at 3.11 across qualified players (minimum 5 events)."
+    "dateAwarded": "2026-05-16",
+    "reason": "Best average finish at 3.12 across qualified players (minimum 5 events)."
   },
   {
     "id": "a004",
+    "name": "Worst average finish",
+    "holder": "p06",
+    "holders": [
+      "p06"
+    ],
+    "dateAwarded": "2026-05-16",
+    "reason": "Worst average finish at 4.89 across qualified players (minimum 5 events)."
+  },
+  {
+    "id": "a005",
+    "name": "Best average Canadian Salad finish",
+    "holder": "p07",
+    "holders": [
+      "p07"
+    ],
+    "dateAwarded": "2026-05-16",
+    "reason": "Best average Canadian Salad finish at 2.67 (minimum 3 Canadian Salad games)."
+  },
+  {
+    "id": "a006",
+    "name": "Worst average Canadian Salad finish",
+    "holder": "p06",
+    "holders": [
+      "p06"
+    ],
+    "dateAwarded": "2026-05-16",
+    "reason": "Worst average Canadian Salad finish at 4.75 (minimum 3 Canadian Salad games)."
+  },
+  {
+    "id": "a007",
+    "name": "Best average Hearts finish",
+    "holder": "p05",
+    "holders": [
+      "p05"
+    ],
+    "dateAwarded": "2026-05-16",
+    "reason": "Best average Hearts finish at 3.17 (minimum 3 Hearts games)."
+  },
+  {
+    "id": "a008",
+    "name": "Worst average Hearts finish",
+    "holder": "p02",
+    "holders": [
+      "p02"
+    ],
+    "dateAwarded": "2026-05-16",
+    "reason": "Worst average Hearts finish at 5.22 (minimum 3 Hearts games)."
+  },
+  {
+    "id": "a009",
+    "name": "Best average Poker finish",
+    "holder": "p03",
+    "holders": [
+      "p03"
+    ],
+    "dateAwarded": "2026-05-16",
+    "reason": "Best average Poker finish at 3.08 (minimum 3 Poker games)."
+  },
+  {
+    "id": "a010",
+    "name": "Worst average Poker finish",
+    "holder": "p07",
+    "holders": [
+      "p07"
+    ],
+    "dateAwarded": "2026-05-16",
+    "reason": "Worst average Poker finish at 6.00 (minimum 3 Poker games)."
+  },
+  {
+    "id": "a011",
+    "name": "Best average Sequence finish",
+    "holder": "p01",
+    "holders": [
+      "p01"
+    ],
+    "dateAwarded": "2026-05-16",
+    "reason": "Best average Sequence finish at 1.89 (minimum 3 Sequence games)."
+  },
+  {
+    "id": "a012",
+    "name": "Worst average Sequence finish",
+    "holder": "p03",
+    "holders": [
+      "p03"
+    ],
+    "dateAwarded": "2026-05-16",
+    "reason": "Worst average Sequence finish at 2.78 (minimum 3 Sequence games)."
+  },
+  {
+    "id": "a013",
     "name": "Most Hearts wins",
     "holder": "p01",
     "holders": [
@@ -39,21 +128,31 @@
       "p03",
       "p04"
     ],
-    "dateAwarded": "2026-05-02",
+    "dateAwarded": "2026-05-16",
     "reason": "Tied atop the Hearts win column with 2 wins."
   },
   {
-    "id": "a005",
+    "id": "a014",
+    "name": "Most Oh Heck wins",
+    "holder": "p01",
+    "holders": [
+      "p01"
+    ],
+    "dateAwarded": "2026-05-16",
+    "reason": "Leads the Oh Heck win column with 1 wins."
+  },
+  {
+    "id": "a015",
     "name": "Most Poker wins",
     "holder": "p01",
     "holders": [
       "p01"
     ],
-    "dateAwarded": "2026-05-02",
+    "dateAwarded": "2026-05-16",
     "reason": "Leads the Poker win column with 5 wins."
   },
   {
-    "id": "a006",
+    "id": "a016",
     "name": "Longest Hearts streak",
     "holder": "p04",
     "holders": [
@@ -63,17 +162,17 @@
     "reason": "Longest Hearts streak at 2 straight sessions."
   },
   {
-    "id": "a007",
+    "id": "a017",
     "name": "Longest Poker streak",
     "holder": "p01",
     "holders": [
       "p01"
     ],
-    "dateAwarded": "2026-05-02",
+    "dateAwarded": "2022-05-21",
     "reason": "Longest Poker streak at 2 straight sessions."
   },
   {
-    "id": "a008",
+    "id": "a018",
     "name": "Longest Sequence event streak",
     "holder": "p01",
     "holders": [
@@ -84,33 +183,33 @@
     "reason": "Tied for the longest Sequence event streak at 2 straight sessions."
   },
   {
-    "id": "a009",
+    "id": "a019",
     "name": "Most Sequence games",
     "holder": "p01",
     "holders": [
       "p01"
     ],
-    "dateAwarded": "2026-05-02",
-    "reason": "Most Sequence games with 63 game wins."
+    "dateAwarded": "2026-05-16",
+    "reason": "Most Sequence games with 72 game wins."
   },
   {
-    "id": "a010",
+    "id": "a020",
     "name": "Most Sequence series",
-    "holder": "p02",
+    "holder": "p01",
     "holders": [
-      "p02"
+      "p01"
     ],
-    "dateAwarded": "2026-05-02",
-    "reason": "Most Sequence series with 24 series wins."
+    "dateAwarded": "2026-05-16",
+    "reason": "Most Sequence series with 27 series wins."
   },
   {
-    "id": "a011",
+    "id": "a021",
     "name": "Most Sequence events",
     "holder": "p01",
     "holders": [
       "p01"
     ],
-    "dateAwarded": "2026-05-02",
-    "reason": "Most Sequence events with 3 event wins and 32 games as the tiebreaker."
+    "dateAwarded": "2026-05-16",
+    "reason": "Most Sequence events with 4 event wins and 38 games as the tiebreaker."
   }
 ]
