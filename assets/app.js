@@ -142,7 +142,11 @@ async function loadAllData() {
       const results = (g.results || []).map((r) => ({ ...r, playerId: normId(r.playerId) }));
       const playerIds = [...new Set(results.map((r) => r.playerId))];
       const winner = normId(g.winnerId) || pickWinner(results, g.gameId);
-      const scores = Object.fromEntries(results.map((r) => [r.playerId, scoreFromResult(r)]));
+      const scores = {};
+      results.forEach((r) => {
+        const s = scoreFromResult(r);
+        if (s != null) scores[r.playerId] = s;
+      });
       games.push({
         id: `${event.id}-${g.gameId}-${idx + 1}`,
         eventId: event.id,
@@ -182,9 +186,11 @@ function pickWinner(results, gameType) {
       : Number(b.points) - Number(a.points))[0];
     if (top?.playerId) return top.playerId;
   }
-  return results[0]?.playerId || '';
-}
-function scoreFromResult(r) {
+  returnr[k] === undefined || r[k] === null || r[k] === '') continue;
+    const n = Number(r[k]);
+    if (Number.isFinite(n)) return n;
+  }
+  return nullcoreFromResult(r) {
   for (const k of ['points', 'winnings', 'gamesWon', 'seriesWon']) {
     if (Number.isFinite(Number(r[k]))) return Number(r[k]);
   }
