@@ -1048,6 +1048,7 @@ function renderInsights() {
             ? renderLineChart(topIds.map((id, i) => ({
                 label: computed.playersById[id]?.name || id,
                 color: SERIES_COLORS[i % SERIES_COLORS.length],
+                avatar: computed.playersById[id]?.avatar || '',
                 points: cumulative[id],
               })), eventDates)
             : '<p class="muted small">No data.</p>'}
@@ -1235,6 +1236,7 @@ function renderGameDeepStats(gameTypeId, filteredGames, sortedGames) {
     const series = topPlayers.map((pid, i) => ({
       label: computed.playersById[pid]?.name || pid,
       color: SERIES_COLORS[i % SERIES_COLORS.length],
+      avatar: computed.playersById[pid]?.avatar || '',
       points: pointsByPlayer[pid].sort((a, b) => String(a.date).localeCompare(String(b.date))),
     })).filter((s) => s.points.length > 0);
 
@@ -1283,9 +1285,11 @@ function renderGameDeepStats(gameTypeId, filteredGames, sortedGames) {
 }
 
 /* Line chart variant that uses real dates for x-spacing.
-   Each series: { label, color, points: [{date, value}] } with possibly different dates. */
+   Each series: { label, color, points: [{date, value}], avatar? } with possibly different dates. */
+let __chartIdCounter = 0;
 function renderLineChartDates(series, opts = {}) {
   const { invertY = false, integerTicks = false } = opts;
+  const chartUid = `c${++__chartIdCounter}`;
   const W = 640, H = 300, PAD_L = 36, PAD_R = 12, PAD_T = 12, PAD_B = 64;
   const innerW = W - PAD_L - PAD_R;
   const innerH = H - PAD_T - PAD_B;
@@ -1325,11 +1329,20 @@ function renderLineChartDates(series, opts = {}) {
           transform="rotate(-45 ${cx} ${labelY})">${escapeHtml(date.slice(5))}</text>
   `).join('');
 
+  const defs = series.map((s, idx) => s.avatar
+    ? `<pattern id="av-${chartUid}-${idx}" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <image href="${escapeHtml(s.avatar)}" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
+      </pattern>`
+    : '').join('');
+
   const lines = series.map((s, idx) => {
     const sid = `s${idx}`;
     const sorted = [...s.points].sort((a, b) => a.date.localeCompare(b.date));
     const d = sorted.map((p, i) => `${i === 0 ? 'M' : 'L'} ${x(p.date)} ${y(p.value)}`).join(' ');
-    const dots = sorted.map((p) => `<circle cx="${x(p.date)}" cy="${y(p.value)}" r="3.5" fill="${s.color}"><title>${escapeHtml(s.label)} · ${escapeHtml(p.date)} · ${p.value}</title></circle>`).join('');
+    const dots = sorted.map((p) => s.avatar
+      ? `<circle cx="${x(p.date)}" cy="${y(p.value)}" r="7" fill="url(#av-${chartUid}-${idx})" stroke="${s.color}" stroke-width="1.5"><title>${escapeHtml(s.label)} · ${escapeHtml(p.date)} · ${p.value}</title></circle>`
+      : `<circle cx="${x(p.date)}" cy="${y(p.value)}" r="3.5" fill="${s.color}"><title>${escapeHtml(s.label)} · ${escapeHtml(p.date)} · ${p.value}</title></circle>`
+    ).join('');
     return `<g class="chart-series" data-series-id="${sid}">
       <path d="${d}" fill="none" stroke="${s.color}" stroke-width="2.25" stroke-linejoin="round" stroke-linecap="round" />
       ${dots}
@@ -1345,6 +1358,7 @@ function renderLineChartDates(series, opts = {}) {
   return `
     <div class="chart-line-wrap" data-chart-wrap>
       <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Series over time">
+        <defs>${defs}</defs>
         ${grid}
         ${lines}
         ${dateLabels}
@@ -1382,6 +1396,7 @@ function renderLineChart(series, dates) {
   const maxY = Math.max(1, ...series.flatMap((s) => s.points.map((p) => p.value)));
   const x = (i) => PAD_L + (n <= 1 ? innerW / 2 : (i / (n - 1)) * innerW);
   const y = (v) => PAD_T + innerH - (v / maxY) * innerH;
+  const chartUid = `c${++__chartIdCounter}`;
 
   // y-axis ticks (0..maxY in up to 5 steps)
   const ticks = [];
@@ -1394,9 +1409,22 @@ function renderLineChart(series, dates) {
     <text x="${PAD_L - 6}" y="${y(t) + 4}" text-anchor="end" font-size="10" fill="#94a3b8">${t}</text>
   `).join('');
 
-  const lines = series.map((s) => {
+  const defs = series.map((s, idx) => s.avatar
+    ? `<pattern id="av-${chartUid}-${idx}" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <image href="${escapeHtml(s.avatar)}" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
+      </pattern>`
+    : '').join('');
+
+  const lines = series.map((s, idx) => {
     const d = s.points.map((p, i) => `${i === 0 ? 'M' : 'L'} ${x(i)} ${y(p.value)}`).join(' ');
-    return `<path d="${d}" fill="none" stroke="${s.color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />`;
+    const dots = s.points.map((p, i) => s.avatar
+      ? `<circle cx="${x(i)}" cy="${y(p.value)}" r="6" fill="url(#av-${chartUid}-${idx})" stroke="${s.color}" stroke-width="1.5"><title>${escapeHtml(s.label)} · ${escapeHtml(dates[i] || '')} · ${p.value}</title></circle>`
+      : `<circle cx="${x(i)}" cy="${y(p.value)}" r="3" fill="${s.color}"><title>${escapeHtml(s.label)} · ${escapeHtml(dates[i] || '')} · ${p.value}</title></circle>`
+    ).join('');
+    return `<g>
+      <path d="${d}" fill="none" stroke="${s.color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      ${dots}
+    </g>`;
   }).join('');
 
   // X-axis: first, middle, last labels.
@@ -1415,6 +1443,7 @@ function renderLineChart(series, dates) {
   return `
     <div class="chart-line-wrap">
       <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Cumulative wins line chart">
+        <defs>${defs}</defs>
         ${grid}
         ${lines}
         ${xTicks}
