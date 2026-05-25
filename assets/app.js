@@ -1112,11 +1112,26 @@ function renderGameDeepStats(gameTypeId, filteredGames, sortedGames) {
   const perPlayer = {};
   filteredGames.forEach((g) => {
     (g.players || []).forEach((pid) => {
-      const row = perPlayer[pid] || (perPlayer[pid] = { played: 0, wins: 0, scores: [] });
+      const row = perPlayer[pid] || (perPlayer[pid] = { played: 0, wins: 0, scores: [], places: [] });
       row.played += 1;
       if (g.winner === pid) row.wins += 1;
       const s = g.scores?.[pid];
       if (typeof s === 'number') row.scores.push(s);
+    });
+  });
+
+  // Average finish: pull positions straight from event results (works for any
+  // game type that records `position`, even when scores aren't tracked).
+  state.data.events.forEach((ev) => {
+    (ev.games || []).forEach((eg) => {
+      if (eg.gameId !== gameTypeId) return;
+      (eg.results || []).forEach((r) => {
+        const pid = r.playerId;
+        const pos = Number(r.position);
+        if (!pid || !Number.isFinite(pos) || pos < 1) return;
+        const row = perPlayer[pid];
+        if (row) row.places.push(pos);
+      });
     });
   });
 
@@ -1128,25 +1143,33 @@ function renderGameDeepStats(gameTypeId, filteredGames, sortedGames) {
       const avg = scoreSample.length ? scoreSample.reduce((a, b) => a + b, 0) / scoreSample.length : null;
       const best = scoreSample.length ? (lowerBetter ? Math.min(...scoreSample) : Math.max(...scoreSample)) : null;
       const worst = scoreSample.length ? (lowerBetter ? Math.max(...scoreSample) : Math.min(...scoreSample)) : null;
+      const avgFinish = r.places.length ? r.places.reduce((a, b) => a + b, 0) / r.places.length : null;
       return {
         pid, name,
         played: r.played,
         wins: r.wins,
         winPct: r.played ? (r.wins / r.played) * 100 : 0,
         avg, best, worst,
+        avgFinish, placesCount: r.places.length,
         hasNonZero: nonZero.length > 0,
       };
     })
     .filter((r) => r.played >= 1)
     .sort((a, b) => {
       if (b.wins !== a.wins) return b.wins - a.wins;
-      if (a.avg == null && b.avg == null) return b.played - a.played;
-      if (a.avg == null) return 1;
-      if (b.avg == null) return -1;
-      return lowerBetter ? a.avg - b.avg : b.avg - a.avg;
+      if (a.avgFinish == null && b.avgFinish == null) {
+        if (a.avg == null && b.avg == null) return b.played - a.played;
+        if (a.avg == null) return 1;
+        if (b.avg == null) return -1;
+        return lowerBetter ? a.avg - b.avg : b.avg - a.avg;
+      }
+      if (a.avgFinish == null) return 1;
+      if (b.avgFinish == null) return -1;
+      return a.avgFinish - b.avgFinish;
     });
 
   const fmt = (v) => v == null ? '—' : (Number.isInteger(v) ? v : v.toFixed(1));
+  const hasAvgFinish = statRows.some((r) => r.avgFinish != null);
 
   const table = `
     <div class="table-wrap">
@@ -1157,6 +1180,7 @@ function renderGameDeepStats(gameTypeId, filteredGames, sortedGames) {
             <th class="num">Played</th>
             <th class="num">Wins</th>
             <th class="num">Win %</th>
+            ${hasAvgFinish ? `<th class="num" title="Average finish across events with a recorded placement">Avg finish</th>` : ''}
             ${hasScores ? `<th class="num">Avg score</th><th class="num">Best</th><th class="num">Worst</th>` : ''}
           </tr>
         </thead>
@@ -1167,6 +1191,7 @@ function renderGameDeepStats(gameTypeId, filteredGames, sortedGames) {
               <td class="num">${r.played}</td>
               <td class="num">${r.wins}</td>
               <td class="num">${r.winPct.toFixed(0)}%</td>
+              ${hasAvgFinish ? `<td class="num" title="${r.placesCount} event${r.placesCount === 1 ? '' : 's'} with a recorded placement">${fmt(r.avgFinish)}</td>` : ''}
               ${hasScores ? `
                 <td class="num">${fmt(r.avg)}</td>
                 <td class="num">${fmt(r.best)}</td>
