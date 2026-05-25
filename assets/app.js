@@ -801,6 +801,14 @@ function renderPlayers() {
     <section class="players-grid">
       <article class="glass-card player-list-card">
         <h2 class="section-title">Player dossiers</h2>
+        <label class="player-select-wrap">
+          <span class="visually-hidden">Choose player</span>
+          <select class="player-select" data-action="select-player-change">
+            ${data.players.map((p) => `
+              <option value="${escapeHtml(p.id)}" ${selected.id === p.id ? 'selected' : ''}>${escapeHtml(p.name)}${p.nickname ? ` — ${escapeHtml(p.nickname)}` : ''}</option>
+            `).join('')}
+          </select>
+        </label>
         <div class="player-list">
           ${data.players.map((p) => `
             <button type="button" class="${cx('player-list-item', selected.id === p.id && 'player-list-item-active')}" data-action="select-player" data-player="${escapeHtml(p.id)}">
@@ -1571,10 +1579,18 @@ function onInput(e) {
 }
 
 function onChange(e) {
-  const target = e.target.closest('[data-action="insights-filter"]');
-  if (!target) return;
-  state.insightGameType = target.value;
-  render();
+  const insights = e.target.closest('[data-action="insights-filter"]');
+  if (insights) {
+    state.insightGameType = insights.value;
+    render();
+    return;
+  }
+  const playerSel = e.target.closest('[data-action="select-player-change"]');
+  if (playerSel) {
+    state.selectedPlayerId = playerSel.value || null;
+    render();
+    return;
+  }
 }
 
 function onHashChange() {

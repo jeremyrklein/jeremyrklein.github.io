@@ -498,6 +498,31 @@ select {
   gap: 1rem;
 }
 
+.player-select-wrap {
+  display: none;
+  margin-top: 0.8rem;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.player-select {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  background: #fff;
+  font: inherit;
+  color: inherit;
+}
+
 .player-list {
   margin-top: 0.8rem;
   display: grid;
@@ -992,6 +1017,8 @@ img.avatar-inline {
   .dossier-stats-grid {
     grid-template-columns: 1fr;
   }
+  .player-list-card .player-list { display: none; }
+  .player-list-card .player-select-wrap { display: block; }
 
   .gate-form,
   .hero-actions {
