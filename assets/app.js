@@ -1674,7 +1674,7 @@ function renderBracketSection(eventGame, computed) {
                 <td class="num ${p1Win ? 'bm-winner' : 'bm-loser'}">${m.p1Score != null ? m.p1Score : ''}</td>
                 <td class="${p2Win ? 'bm-winner' : 'bm-loser'}">${escapeHtml(nameOf(m.p2))}</td>
                 <td class="num ${p2Win ? 'bm-winner' : 'bm-loser'}">${m.p2Score != null ? m.p2Score : ''}</td>
-                <td class="bm-winner">${escapeHtml(nameOf(m.winner))}</td>
+                <td class="bm-winner">${escapeHtml(nameOf(m.winner))}${m.note ? ` <span class="muted tiny">(${escapeHtml(m.note)})</span>` : ''}</td>
               </tr>
             `;
           }).join('')}

@@ -375,6 +375,40 @@
           }
         ],
         "rounds": [],
+        "bracket": {
+          "format": "double-elimination",
+          "image": "./assets/tt-bracket-4-7-2007.png",
+          "seeds": [
+            { "seed": 1, "playerId": "p05" },
+            { "seed": 2, "playerId": "p03" },
+            { "seed": 3, "playerId": "p04" },
+            { "seed": 4, "playerId": "p16" },
+            { "seed": 5, "playerId": "p15" },
+            { "seed": 6, "playerId": "p02" },
+            { "seed": 7, "playerId": "p17" },
+            { "seed": 8, "playerId": "p01" },
+            { "seed": 9, "playerId": "p14" }
+          ],
+          "matches": [
+            { "id": "Gm1",  "bracket": "W", "round": 1, "p1": "p01", "p2": "p14", "p1Score": 2, "p2Score": 0, "winner": "p01" },
+            { "id": "Gm2",  "bracket": "W", "round": 2, "p1": "p04", "p2": "p02", "p1Score": 2, "p2Score": 0, "winner": "p04" },
+            { "id": "Gm3",  "bracket": "W", "round": 2, "p1": "p03", "p2": "p17", "p1Score": 2, "p2Score": 0, "winner": "p03" },
+            { "id": "Gm4",  "bracket": "W", "round": 2, "p1": "p16", "p2": "p15", "p1Score": 0, "p2Score": 2, "winner": "p15" },
+            { "id": "Gm5",  "bracket": "W", "round": 2, "p1": "p05", "p2": "p01", "p1Score": 2, "p2Score": 0, "winner": "p05" },
+            { "id": "Gm6",  "bracket": "L", "round": 1, "p1": "p14", "p2": "p16", "p1Score": 0, "p2Score": 2, "winner": "p16" },
+            { "id": "Gm7",  "bracket": "L", "round": 1, "p1": "p01", "p2": "p17", "p1Score": 2, "p2Score": 0, "winner": "p01" },
+            { "id": "Gm8",  "bracket": "W", "round": 3, "p1": "p04", "p2": "p03", "p1Score": 0, "p2Score": 2, "winner": "p03" },
+            { "id": "Gm9",  "bracket": "L", "round": 2, "p1": "p02", "p2": "p16", "p1Score": 0, "p2Score": 2, "winner": "p16" },
+            { "id": "Gm10", "bracket": "W", "round": 3, "p1": "p15", "p2": "p05", "p1Score": 1, "p2Score": 2, "winner": "p05" },
+            { "id": "Gm11", "bracket": "L", "round": 2, "p1": "p04", "p2": "p01", "p1Score": 2, "p2Score": 1, "winner": "p04" },
+            { "id": "Gm12", "bracket": "L", "round": 2, "p1": "p15", "p2": "p16", "p1Score": 2, "p2Score": 0, "winner": "p15" },
+            { "id": "Gm13", "bracket": "W", "round": 4, "p1": "p03", "p2": "p05", "p1Score": 0, "p2Score": 2, "winner": "p05" },
+            { "id": "Gm14", "bracket": "L", "round": 3, "p1": "p04", "p2": "p15", "p1Score": 2, "p2Score": 0, "winner": "p04" },
+            { "id": "Gm15", "bracket": "L", "round": 4, "p1": "p03", "p2": "p04", "p1Score": 0, "p2Score": 0, "winner": "p04", "note": "Clark Close forfeited" },
+            { "id": "Gm16", "bracket": "F", "round": 1, "p1": "p04", "p2": "p05", "p1Score": 2, "p2Score": 0, "winner": "p04" },
+            { "id": "Gm17", "bracket": "F", "round": 2, "p1": "p05", "p2": "p04", "p1Score": 2, "p2Score": 0, "winner": "p05", "note": "Bracket reset" }
+          ]
+        },
         "winnerId": "p05"
       }
     ]
