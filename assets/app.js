@@ -816,25 +816,15 @@ function renderPlayers() {
         </div>
       </article>
 
-      <article class="glass-card dossier-card">
-        <div class="dossier-hero">
-          <div class="dossier-left">
-            ${selected.card
-              ? `<figure class="player-card">
-                   <img class="player-card-img" src="${escapeHtml(selected.card)}" alt="${escapeHtml(selected.name)} player card" />
-                   <figcaption class="player-card-caption">
-                     <span class="muted tiny">Joined ${escapeHtml(String(computed.firstYearByPlayer[selected.id] || selected.joinedYear || ''))}</span>
-                     ${selected.nickname ? `<span class="accent">${escapeHtml(selected.nickname)}</span>` : ''}
-                   </figcaption>
-                 </figure>`
-              : `${selected.avatar
-                  ? `<img class="avatar-large" src="${escapeHtml(selected.avatar)}" alt="" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'avatar-large',textContent:'${escapeHtml(selected.name.slice(0,1))}'}))" />`
-                  : `<div class="avatar-large">${escapeHtml(selected.name.slice(0, 1))}</div>`}
-                 <p class="muted tiny">Joined ${escapeHtml(String(computed.firstYearByPlayer[selected.id] || selected.joinedYear || ''))}</p>
-                 <h3>${escapeHtml(selected.name)}</h3>
-                 <p class="accent">${escapeHtml(selected.nickname || '')}</p>`}
-          </div>
-          <div class="dossier-right">
+      ${selected.card ? `
+        <div class="dossier-with-card">
+          <figure class="player-card">
+            <img class="player-card-img" src="${escapeHtml(selected.card)}" alt="${escapeHtml(selected.name)} player card" />
+            <figcaption class="player-card-caption">
+              <span class="muted tiny">Joined ${escapeHtml(String(computed.firstYearByPlayer[selected.id] || selected.joinedYear || ''))}</span>
+            </figcaption>
+          </figure>
+          <article class="glass-card dossier-info-card">
             <div class="row between wrap-gap">
               <div>
                 <p class="muted tiny upcase">Specialty</p>
@@ -857,9 +847,46 @@ function renderPlayers() {
               </div>
             </div>
             ${!isUnlocked ? `<p class="muted tiny">Unlock detailed stats from dashboard to reveal private records.</p>` : ''}
-          </div>
+          </article>
         </div>
-      </article>
+      ` : `
+        <article class="glass-card dossier-card">
+          <div class="dossier-hero">
+            <div class="dossier-left">
+              ${selected.avatar
+                ? `<img class="avatar-large" src="${escapeHtml(selected.avatar)}" alt="" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'avatar-large',textContent:'${escapeHtml(selected.name.slice(0,1))}'}))" />`
+                : `<div class="avatar-large">${escapeHtml(selected.name.slice(0, 1))}</div>`}
+              <p class="muted tiny">Joined ${escapeHtml(String(computed.firstYearByPlayer[selected.id] || selected.joinedYear || ''))}</p>
+              <h3>${escapeHtml(selected.name)}</h3>
+              <p class="accent">${escapeHtml(selected.nickname || '')}</p>
+            </div>
+            <div class="dossier-right">
+              <div class="row between wrap-gap">
+                <div>
+                  <p class="muted tiny upcase">Specialty</p>
+                  <p class="small-title">${escapeHtml(selected.specialty || '—')}</p>
+                </div>
+              </div>
+              <p class="muted">${escapeHtml(selected.bio || '')}</p>
+              <div class="dossier-stats-grid">
+                <div class="chip-card">
+                  <p class="muted tiny">Wins</p>
+                  <p class="${cx('chip-value', !isUnlocked && 'blurred')}">${stats.wins}</p>
+                </div>
+                <div class="chip-card">
+                  <p class="muted tiny">Games</p>
+                  <p class="${cx('chip-value', !isUnlocked && 'blurred')}">${stats.gamesPlayed}</p>
+                </div>
+                <div class="chip-card">
+                  <p class="muted tiny">Win Rate</p>
+                  <p class="${cx('chip-value', !isUnlocked && 'blurred')}">${(stats.winRate || 0).toFixed(1)}%</p>
+                </div>
+              </div>
+              ${!isUnlocked ? `<p class="muted tiny">Unlock detailed stats from dashboard to reveal private records.</p>` : ''}
+            </div>
+          </div>
+        </article>
+      `}
     </section>
   `;
 }

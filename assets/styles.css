@@ -562,7 +562,7 @@ img.avatar-large {
 }
 .player-card-img {
   width: 100%;
-  max-width: 220px;
+  max-width: 260px;
   height: auto;
   border-radius: 14px;
   display: block;
@@ -576,6 +576,21 @@ img.avatar-large {
   align-items: center;
   gap: 0.15rem;
   text-align: center;
+}
+.dossier-with-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+.dossier-info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+@media (max-width: 720px) {
+  .dossier-with-card { grid-template-columns: 1fr; }
+  .player-card { align-items: flex-start; }
 }
 
 .dossier-hero {
