@@ -76,14 +76,13 @@ body {
 }
 
 .brand-icon {
-  display: grid;
-  place-items: center;
-  height: 80px;
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
 }
 .brand-icon img {
+  height: 80px;
   width: auto;
-  height: 100%;
   object-fit: contain;
   display: block;
 }
