@@ -447,6 +447,7 @@
         "rounds": [],
         "bracket": {
           "format": "double-elimination",
+          "image": "./assets/tt-bracket-4-21-2007.png",
           "seeds": [
             { "seed": 1, "playerId": "p04" },
             { "seed": 2, "playerId": "p13" },

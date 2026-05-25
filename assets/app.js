@@ -1599,6 +1599,9 @@ function renderBracketSection(eventGame, computed) {
 
   const roundLabel = (section, n, total) => {
     if (section === 'F') return 'Grand Final';
+    // Round 1 of the upper bracket is everyone's entry round — not yet a
+    // "winners" round. Only label as Winners/Losers from round 2 onward.
+    if (section === 'W' && n === 1) return 'Round 1';
     const prefix = section === 'W' ? 'Winners' : 'Losers';
     if (n === total) return `${prefix} Final`;
     if (n === total - 1) return `${prefix} Semifinal`;
@@ -1640,6 +1643,46 @@ function renderBracketSection(eventGame, computed) {
     ? 'Double Elimination'
     : (bracket.format ? bracket.format.replace(/-/g, ' ') : 'Bracket');
 
+  const hasImage = typeof bracket.image === 'string' && bracket.image.trim().length > 0;
+
+  const sectionTitle = (s) => s === 'W' ? 'Winners bracket' : (s === 'L' ? 'Losers bracket' : 'Grand Final');
+
+  // Compact match-by-match table — always shown so the scores are scannable.
+  const matchesTable = `
+    <div class="bracket-matches-table">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Round</th>
+            <th class="bm-player">Player</th>
+            <th class="num">Score</th>
+            <th class="bm-player">Player</th>
+            <th class="num">Score</th>
+            <th>Winner</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${bracket.matches.map((m) => {
+            const p1Win = m.winner === m.p1;
+            const p2Win = m.winner === m.p2;
+            return `
+              <tr>
+                <td class="bm-id">${escapeHtml(m.id || '')}</td>
+                <td class="muted small">${escapeHtml(roundLabel(m.bracket, m.round, Math.max(...bracket.matches.filter((x) => x.bracket === m.bracket).map((x) => x.round))))}</td>
+                <td class="${p1Win ? 'bm-winner' : 'bm-loser'}">${escapeHtml(nameOf(m.p1))}</td>
+                <td class="num ${p1Win ? 'bm-winner' : 'bm-loser'}">${m.p1Score != null ? m.p1Score : ''}</td>
+                <td class="${p2Win ? 'bm-winner' : 'bm-loser'}">${escapeHtml(nameOf(m.p2))}</td>
+                <td class="num ${p2Win ? 'bm-winner' : 'bm-loser'}">${m.p2Score != null ? m.p2Score : ''}</td>
+                <td class="bm-winner">${escapeHtml(nameOf(m.winner))}</td>
+              </tr>
+            `;
+          }).join('')}
+        </tbody>
+      </table>
+    </div>
+  `;
+
   return `
     <article class="glass-card results-section-card">
       <div class="row between wrap-gap">
@@ -1647,9 +1690,16 @@ function renderBracketSection(eventGame, computed) {
         <span class="muted small">${escapeHtml(formatLabel)}</span>
       </div>
       ${seedList}
-      ${renderSection('W', wb)}
-      ${renderSection('L', lb)}
-      ${gf.length ? renderSection('F', { 1: gf }) : ''}
+      ${hasImage ? `
+        <figure class="bracket-image-wrap">
+          <img class="bracket-image" src="${escapeHtml(bracket.image)}" alt="Tournament bracket" />
+        </figure>
+      ` : `
+        ${renderSection('W', wb)}
+        ${renderSection('L', lb)}
+        ${gf.length ? renderSection('F', { 1: gf }) : ''}
+      `}
+      ${matchesTable}
     </article>
   `;
 }
