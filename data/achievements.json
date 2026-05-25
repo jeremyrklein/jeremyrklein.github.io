@@ -2,12 +2,12 @@
   {
     "id": "a001",
     "name": "Most last-place finishes",
-    "holder": "p06",
+    "holder": "p04",
     "holders": [
-      "p06"
+      "p04"
     ],
     "dateAwarded": "2026-05-16",
-    "reason": "Most last-place finishes with 12 last-place finishes across all tracked games."
+    "reason": "Most last-place finishes with 11 last-place finishes across all tracked games."
   },
   {
     "id": "a002",
@@ -22,12 +22,12 @@
   {
     "id": "a003",
     "name": "Best average finish",
-    "holder": "p01",
+    "holder": "p05",
     "holders": [
-      "p01"
+      "p05"
     ],
     "dateAwarded": "2026-05-16",
-    "reason": "Best average finish at 3.20 across qualified players (minimum 5 events)."
+    "reason": "Best average finish at 2.71 across qualified players (minimum 5 events)."
   },
   {
     "id": "a004",
@@ -37,7 +37,7 @@
       "p06"
     ],
     "dateAwarded": "2026-05-16",
-    "reason": "Worst average finish at 4.89 across qualified players (minimum 5 events)."
+    "reason": "Worst average finish at 4.43 across qualified players (minimum 5 events)."
   },
   {
     "id": "a005",
@@ -67,7 +67,7 @@
       "p05"
     ],
     "dateAwarded": "2026-05-16",
-    "reason": "Best average Hearts finish at 3.17 (minimum 3 Hearts games)."
+    "reason": "Best average Hearts finish at 2.40 (minimum 3 Hearts games)."
   },
   {
     "id": "a008",
@@ -77,17 +77,17 @@
       "p02"
     ],
     "dateAwarded": "2026-05-16",
-    "reason": "Worst average Hearts finish at 5.22 (minimum 3 Hearts games)."
+    "reason": "Worst average Hearts finish at 5.00 (minimum 3 Hearts games)."
   },
   {
     "id": "a009",
     "name": "Best average Poker finish",
-    "holder": "p03",
+    "holder": "p01",
     "holders": [
-      "p03"
+      "p01"
     ],
     "dateAwarded": "2026-05-16",
-    "reason": "Best average Poker finish at 3.08 (minimum 3 Poker games)."
+    "reason": "Best average Poker finish at 2.55 (minimum 3 Poker games)."
   },
   {
     "id": "a010",
@@ -97,7 +97,7 @@
       "p07"
     ],
     "dateAwarded": "2026-05-16",
-    "reason": "Worst average Poker finish at 6.00 (minimum 3 Poker games)."
+    "reason": "Worst average Poker finish at 5.00 (minimum 3 Poker games)."
   },
   {
     "id": "a011",

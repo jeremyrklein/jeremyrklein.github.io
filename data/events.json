@@ -450,32 +450,27 @@
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Jeremy",
-            "position": 7
+            "sourceName": "Jeremy"
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "Brandon",
-            "position": 7
+            "sourceName": "Brandon"
           },
           {
             "playerId": "p03",
             "playerName": "Clark Close",
-            "sourceName": "Clark",
-            "position": 7
+            "sourceName": "Clark"
           },
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "John",
-            "position": 7
+            "sourceName": "John"
           },
           {
             "playerId": "p05",
             "playerName": "Jon Hicks",
-            "sourceName": "Jon",
-            "position": 7
+            "sourceName": "Jon"
           }
         ],
         "rounds": [],
@@ -500,32 +495,27 @@
           {
             "playerId": "p02",
             "playerName": "Jeremy Klein",
-            "sourceName": "Jeremy",
-            "position": 7
+            "sourceName": "Jeremy"
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Jake",
-            "position": 7
+            "sourceName": "Jake"
           },
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Mitch",
-            "position": 7
+            "sourceName": "Mitch"
           },
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "John",
-            "position": 7
+            "sourceName": "John"
           },
           {
             "playerId": "p05",
             "playerName": "Jon Hicks",
-            "sourceName": "Jon",
-            "position": 7
+            "sourceName": "Jon"
           }
         ],
         "rounds": [],
@@ -552,33 +542,28 @@
             "playerId": "p02",
             "playerName": "Jeremy Klein",
             "sourceName": "Jeremy",
-            "position": 7,
             "moonShots": 1
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Jake",
-            "position": 7
+            "sourceName": "Jake"
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "Brandon",
-            "position": 7
+            "sourceName": "Brandon"
           },
           {
             "playerId": "p06",
             "playerName": "John Sargent",
             "sourceName": "John",
-            "position": 7,
             "moonShots": 3
           },
           {
             "playerId": "p05",
             "playerName": "Jon Hicks",
-            "sourceName": "Jon",
-            "position": 7
+            "sourceName": "Jon"
           }
         ],
         "rounds": [],
@@ -5102,44 +5087,37 @@
           {
             "playerId": "p04",
             "playerName": "Mitch Stuard",
-            "sourceName": "Mitch",
-            "position": 9
+            "sourceName": "Mitch"
           },
           {
             "playerId": "p01",
             "playerName": "Jake Klein",
-            "sourceName": "Jake",
-            "position": 9
+            "sourceName": "Jake"
           },
           {
             "playerId": "p10",
             "playerName": "Brandon Ford",
-            "sourceName": "Brandon",
-            "position": 9
+            "sourceName": "Brandon"
           },
           {
             "playerId": "p06",
             "playerName": "John Sargent",
-            "sourceName": "John",
-            "position": 9
+            "sourceName": "John"
           },
           {
             "playerId": "p05",
             "playerName": "Jon Hicks",
-            "sourceName": "Jon",
-            "position": 9
+            "sourceName": "Jon"
           },
           {
             "playerId": "p09",
             "playerName": "Ben Feely",
-            "sourceName": "Ben",
-            "position": 9
+            "sourceName": "Ben"
           },
           {
             "playerId": "p07",
             "playerName": "Aaron Grefsrud",
-            "sourceName": "Aaron",
-            "position": 9
+            "sourceName": "Aaron"
           }
         ],
         "rounds": [],
